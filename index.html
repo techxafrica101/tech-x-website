@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-X - Building Smart Digital Solutions for Africa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'tech-blue': '#1e40af',
+                        'tech-indigo': '#1e3a8a',
+                        'tech-accent': '#3b82f6',
+                        'tech-gray': '#374151'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-tech-gray font-sans">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold text-gray-900 tracking-tight">Tech-X</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="#services" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Services</a>
+                    <a href="#projects" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Projects</a>
+                    <a href="#about" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">About</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-6 py-4 space-y-3">
+                <a href="#services" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Services</a>
+                <a href="#projects" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Projects</a>
+                <a href="#about" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">About</a>
+                <a href="#contact" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh] py-16 lg:py-24">
+                <!-- Content Column -->
+                <div class="hero-content opacity-0 translate-y-8 transition-all duration-700 ease-out">
+                    <h1 class="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                        Building Smart Digital Solutions for Africa
+                    </h1>
+                    
+                    <p class="text-xl text-gray-600 leading-relaxed mb-10 max-w-xl">
+                        We design data platforms, web solutions, and digital tools that solve real-world problems with precision and impact.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#projects" class="inline-flex items-center justify-center px-8 py-4 bg-tech-indigo text-white font-semibold rounded-full hover:bg-tech-blue transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl">
+                            Explore Our Work
+                        </a>
+                        <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 text-gray-700 font-semibold hover:text-tech-indigo transition-colors duration-200">
+                            Contact Us
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Live Typing Card -->
+                <div class="hero-visual opacity-0 translate-y-8 transition-all duration-700 ease-out delay-200">
+                    <div class="relative max-w-sm mx-auto lg:mx-0">
+                        <!-- Live Card -->
+                        <div class="live-card bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-xl border border-gray-200/50 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                            <!-- Card Header -->
+                            <div class="flex items-center justify-between mb-6">
+                                <h3 class="text-lg font-semibold text-gray-900">What We're Working On</h3>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                                    <span class="text-xs text-gray-500 font-medium">LIVE</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Typing Area -->
+                            <div class="bg-gray-50/70 rounded-lg p-4 min-h-[60px] flex items-center">
+                                <div class="text-gray-700 font-medium text-sm">
+                                    <span id="typing-text"></span><span class="typing-cursor text-tech-indigo">|</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Card Footer -->
+                            <div class="mt-4 pt-4 border-t border-gray-100">
+                                <div class="flex items-center justify-between text-xs text-gray-500">
+                                    <span>Active Projects</span>
+                                    <span class="flex items-center">
+                                        <div class="w-1 h-1 bg-tech-indigo rounded-full mr-1"></div>
+                                        Real-time updates
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Background decoration -->
+                        <div class="absolute -inset-4 bg-gradient-to-r from-tech-indigo/5 to-tech-blue/5 rounded-2xl -z-10 blur-xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>""
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-tech-indigo mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    We deliver innovative technology solutions tailored to African markets and global standards.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-tech-accent text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-tech-indigo mb-3">Data & Analytics Solutions</h3>
+                    <p class="text-gray-600">
+                        Dashboards, insights, APIs, and data visualization tools that transform raw data into actionable intelligence.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-tech-accent text-4xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-tech-indigo mb-3">Web & Software Development</h3>
+                    <p class="text-gray-600">
+                        Modern, scalable web applications built with cutting-edge technologies and best practices.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-tech-accent text-4xl mb-4">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-tech-indigo mb-3">Agri-Tech & Smart Farming Solutions</h3>
+                    <p class="text-gray-600">
+                        Digital tools for farmers and cooperatives to optimize productivity and market access.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-tech-accent text-4xl mb-4">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-tech-indigo mb-3">Business Registration & Digital Compliance</h3>
+                    <p class="text-gray-600">
+                        Tech-enabled business support services that streamline registration and compliance processes.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 md:col-span-2 lg:col-span-1">
+                    <div class="text-tech-accent text-4xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-tech-indigo mb-3">Digital Skills & Coding Training</h3>
+                    <p class="text-gray-600">
+                        Practical training programs for youths and startups to build digital capabilities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Tech-X Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Why Tech-X</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    We combine local insight with global standards to build systems that work for Africa.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Local Insight -->
+                <div class="why-card text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-tech-indigo/10 rounded-xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-tech-indigo" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Local Insight, Global Standards</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Deep understanding of African markets with world-class technology practices.
+                    </p>
+                </div>
+
+                <!-- Data-First -->
+                <div class="why-card text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-tech-indigo/10 rounded-xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-tech-indigo" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Data-First Approach</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Every solution is built on solid data foundations and evidence-based decisions.
+                    </p>
+                </div>
+
+                <!-- Real Challenges -->
+                <div class="why-card text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-tech-indigo/10 rounded-xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-tech-indigo" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Built for Real Challenges</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Solutions designed specifically for African contexts and real-world problems.
+                    </p>
+                </div>
+
+                <!-- Future-Ready -->
+                <div class="why-card text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-tech-indigo/10 rounded-xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-tech-indigo" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Scalable & Future-Ready</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Systems built to grow with your needs and adapt to changing requirements.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-tech-indigo mb-4">Our Projects</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Current and upcoming projects that showcase our commitment to innovation and impact.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- StatFlow Project -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-tech-indigo">StatFlow</h3>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Live</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Real-time statistical data platform with data visualization, insights, and APIs designed for policymakers, researchers, and businesses.
+                    </p>
+                    <div class="flex items-center text-tech-accent">
+                        <i class="fas fa-external-link-alt mr-2"></i>
+                        <span class="text-sm">Data visualization • APIs • Real-time insights</span>
+                    </div>
+                </div>
+
+                <!-- Future Project 1 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-tech-indigo">Upcoming Agri-Tech Platform</h3>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">In Development</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Comprehensive digital platform connecting farmers with markets, providing weather data, crop management tools, and financial services.
+                    </p>
+                    <div class="flex items-center text-tech-accent">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span class="text-sm">Market connectivity • Weather data • Crop management</span>
+                    </div>
+                </div>
+
+                <!-- Future Project 2 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-tech-indigo">E-Commerce for Drip Fashion</h3>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Live Soon</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Modern e-commerce platform featuring inventory management, payment integration, and customer analytics for fashion retail.
+                    </p>
+                    <div class="flex items-center text-tech-accent">
+                        <i class="fas fa-shopping-cart mr-2"></i>
+                        <span class="text-sm">E-commerce • Inventory • Analytics</span>
+                    </div>
+                </div>
+
+                <!-- Future Project 3 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-tech-indigo">Digital Cooperative Management System</h3>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">In Development</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Digital platform for cooperative societies to manage members, finances, and operations with transparency and efficiency.
+                    </p>
+                    <div class="flex items-center text-tech-accent">
+                        <i class="fas fa-users mr-2"></i>
+                        <span class="text-sm">Member management • Financial tracking • Operations</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Section -->
+    <section class="py-24 bg-gray-50/30">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">How We Work</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Our structured approach ensures quality delivery and reduces project risks.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="process-card text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="relative mb-8">
+                        <div class="w-16 h-16 bg-tech-indigo rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-white">1</span>
+                        </div>
+                        <div class="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-gray-200 -translate-y-0.5"></div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Understand the Problem</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Deep dive into your challenges, requirements, and business context.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-card text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="relative mb-8">
+                        <div class="w-16 h-16 bg-tech-indigo rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-white">2</span>
+                        </div>
+                        <div class="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-gray-200 -translate-y-0.5"></div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Design the Solution</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Create detailed technical architecture and user experience design.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-card text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="relative mb-8">
+                        <div class="w-16 h-16 bg-tech-indigo rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-white">3</span>
+                        </div>
+                        <div class="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-gray-200 -translate-y-0.5"></div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Build & Test</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Develop with rigorous testing and continuous feedback integration.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="process-card text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="relative mb-8">
+                        <div class="w-16 h-16 bg-tech-indigo rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-white">4</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Deploy & Support</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Launch with comprehensive support and ongoing maintenance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Focus Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <div class="current-focus bg-gradient-to-r from-tech-indigo/5 to-tech-blue/5 rounded-2xl p-12 opacity-0 translate-y-4 transition-all duration-700">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse mr-3"></div>
+                    <span class="text-sm font-medium text-gray-600 uppercase tracking-wide">Currently Active</span>
+                </div>
+                
+                <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
+                    Building StatFlow — Real-time Data Analytics Platform
+                </h2>
+                
+                <p class="text-lg text-gray-600 leading-relaxed mb-8 max-w-2xl mx-auto">
+                    A comprehensive data platform for public and private decision-makers, featuring real-time insights, 
+                    custom dashboards, and powerful APIs for evidence-based decision making.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#projects" class="inline-flex items-center justify-center px-6 py-3 bg-tech-indigo text-white font-medium rounded-lg hover:bg-tech-blue transition-colors duration-200">
+                        View Project Details
+                    </a>
+                    <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 text-gray-700 font-medium hover:text-tech-indigo transition-colors duration-200">
+                        Request Consultation
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-gray-50/30">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">About Tech-X</h2>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-12 items-center">
+                <!-- Main Content -->
+                <div class="lg:col-span-2">
+                    <div class="about-content bg-white/50 backdrop-blur-sm rounded-2xl p-10 shadow-sm border border-gray-100 opacity-0 translate-y-4 transition-all duration-700">
+                        <div class="prose prose-lg">
+                            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                                Tech-X is a Zambian-based innovation company dedicated to solving real African problems using cutting-edge technology. We focus on creating data-driven solutions that enhance efficiency and deliver measurable impact.
+                            </p>
+                            
+                            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                                Our vision-driven and youth-powered team combines deep understanding of African markets with global technology standards.
+                            </p>
+                            
+                            <!-- Vision Statement -->
+                            <div class="bg-tech-indigo/5 rounded-lg p-6 mb-6">
+                                <p class="text-lg font-medium text-gray-900 italic">
+                                    "Our vision is to build intelligent digital systems that empower African decision-making."
+                                </p>
+                            </div>
+                            
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 bg-tech-indigo text-white font-medium rounded-lg hover:bg-tech-blue transition-colors duration-200">
+                                    Partner With Us
+                                </a>
+                                <a href="#projects" class="inline-flex items-center justify-center px-6 py-3 text-gray-700 font-medium hover:text-tech-indigo transition-colors duration-200">
+                                    View Our Work
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social Proof -->
+                <div class="social-proof opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-6">Built For</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-tech-indigo rounded-full mr-3"></div>
+                                <span class="text-gray-700">Local innovators</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-tech-indigo rounded-full mr-3"></div>
+                                <span class="text-gray-700">Data-driven decisions</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-tech-indigo rounded-full mr-3"></div>
+                                <span class="text-gray-700">Researchers & startups</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-tech-indigo rounded-full mr-3"></div>
+                                <span class="text-gray-700">Government institutions</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 pt-6 border-t border-gray-100">
+                            <div class="flex items-center justify-between text-sm text-gray-500">
+                                <span>🇿🇲 Based in Zambia</span>
+                                <span class="flex items-center">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                                    Active
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-tech-indigo mb-4">Contact Us</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Ready to start your next project? Let's discuss how we can help bring your ideas to life.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <!-- Contact Details Card (Left Side) -->
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-tech-indigo mb-8">Get In Touch</h3>
+                    
+                    <div class="space-y-6">
+                        <!-- Company Name -->
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-tech-accent bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-building text-tech-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 uppercase tracking-wide">Company</p>
+                                <p class="text-lg font-semibold text-gray-800">Tech-X</p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-tech-accent bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-tech-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 uppercase tracking-wide">Email</p>
+                                <a href="mailto:techx.africa101@gmail.com" class="text-lg font-semibold text-tech-accent hover:text-tech-blue transition-colors duration-300">
+                                    techx.africa101@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-tech-accent bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-tech-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 uppercase tracking-wide">Phone</p>
+                                <a href="tel:+260776082004" class="text-lg font-semibold text-tech-accent hover:text-tech-blue transition-colors duration-300">
+                                    +260 776 082 004
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-tech-accent bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-tech-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 uppercase tracking-wide">Location</p>
+                                <p class="text-lg font-semibold text-gray-800">Zambia</p>
+                            </div>
+                        </div>
+
+                        <!-- Availability -->
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-tech-accent bg-opacity-10 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-clock text-tech-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 uppercase tracking-wide">Availability</p>
+                                <p class="text-lg font-semibold text-gray-800">Monday – Friday</p>
+                                <p class="text-sm text-gray-600">08:00 – 17:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp Button -->
+                    <div class="mt-8 pt-6 border-t border-gray-200">
+                        <a href="https://wa.me/260776082004" target="_blank" class="w-full bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300 flex items-center justify-center">
+                            <i class="fab fa-whatsapp text-xl mr-3"></i>
+                            Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form (Right Side) -->
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-tech-indigo mb-6">Send us a Message</h3>
+                    
+                    <!-- Success Message (Hidden by default) -->
+                    <div id="success-message" class="hidden bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span>Message sent successfully! We'll get back to you soon.</span>
+                        </div>
+                    </div>
+
+                    <!-- Error Message (Hidden by default) -->
+                    <div id="error-message" class="hidden bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-exclamation-circle mr-2"></i>
+                            <span>Something went wrong. Please try again or contact us directly.</span>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" action="https://formspree.io/f/mdkqjwvq" method="POST">
+                        <div class="mb-6">
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-tech-accent focus:border-transparent transition-colors duration-300" required>
+                            <div class="text-red-500 text-sm mt-1 hidden" id="name-error">Please enter your full name</div>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-tech-accent focus:border-transparent transition-colors duration-300" required>
+                            <div class="text-red-500 text-sm mt-1 hidden" id="email-error">Please enter a valid email address</div>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-tech-accent focus:border-transparent transition-colors duration-300" required placeholder="Tell us about your project or how we can help..."></textarea>
+                            <div class="text-red-500 text-sm mt-1 hidden" id="message-error">Please enter your message</div>
+                        </div>
+
+                        <button type="submit" id="submit-btn" class="w-full bg-tech-indigo text-white px-6 py-3 rounded-lg font-semibold hover:bg-tech-blue transition-colors duration-300 flex items-center justify-center">
+                            <span id="submit-text">Send Message</span>
+                            <i id="submit-spinner" class="fas fa-spinner fa-spin ml-2 hidden"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/260776082004" target="_blank" class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-tech-indigo text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-4">Tech-X</h3>
+                <p class="text-blue-200 mb-6 italic">Innovating with purpose.</p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" class="text-blue-200 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-blue-200 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-blue-200 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                </div>
+                <div class="border-t border-blue-700 pt-8">
+                    <p class="text-blue-200">&copy; 2025 Tech-X. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Styles -->
+    <style>
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            background-color: #1e3a8a;
+            transition: all 0.2s ease-in-out;
+            transform: translateX(-50%);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .hero-content.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .hero-visual.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Typing cursor animation */
+        .typing-cursor {
+            animation: blink 1.2s infinite;
+            font-weight: 400;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        /* Live card glassmorphism effect */
+        .live-card {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        /* Scroll-based animations */
+        .service-card.animate,
+        .project-card.animate,
+        .why-card.animate,
+        .process-card.animate,
+        .current-focus.animate,
+        .about-content.animate,
+        .social-proof.animate,
+        .contact-details.animate,
+        .contact-form.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 1023px) {
+            .hero-visual {
+                display: block !important;
+                margin-top: 3rem;
+            }
+        }
+    </style>
+
+    <!-- JavaScript for enhanced functionality -->
+    <script>
+        // Auto-typing functionality
+        class AutoTyper {
+            constructor(element, texts, options = {}) {
+                this.element = element;
+                this.texts = texts;
+                this.typeSpeed = options.typeSpeed || 80;
+                this.deleteSpeed = options.deleteSpeed || 40;
+                this.pauseTime = options.pauseTime || 1800;
+                this.currentTextIndex = 0;
+                this.currentCharIndex = 0;
+                this.isDeleting = false;
+                this.isPaused = false;
+            }
+
+            type() {
+                const currentText = this.texts[this.currentTextIndex];
+                
+                if (this.isPaused) {
+                    setTimeout(() => {
+                        this.isPaused = false;
+                        this.type();
+                    }, this.pauseTime);
+                    return;
+                }
+
+                if (!this.isDeleting && this.currentCharIndex < currentText.length) {
+                    // Typing
+                    this.element.textContent = currentText.substring(0, this.currentCharIndex + 1);
+                    this.currentCharIndex++;
+                    setTimeout(() => this.type(), this.typeSpeed);
+                } else if (this.isDeleting && this.currentCharIndex > 0) {
+                    // Deleting
+                    this.element.textContent = currentText.substring(0, this.currentCharIndex - 1);
+                    this.currentCharIndex--;
+                    setTimeout(() => this.type(), this.deleteSpeed);
+                } else if (!this.isDeleting && this.currentCharIndex === currentText.length) {
+                    // Finished typing, pause then start deleting
+                    this.isPaused = true;
+                    this.isDeleting = true;
+                    this.type();
+                } else if (this.isDeleting && this.currentCharIndex === 0) {
+                    // Finished deleting, move to next text
+                    this.isDeleting = false;
+                    this.currentTextIndex = (this.currentTextIndex + 1) % this.texts.length;
+                    setTimeout(() => this.type(), 300);
+                }
+            }
+
+            start() {
+                setTimeout(() => this.type(), 500);
+            }
+        }
+
+        // DOM Content Loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hero animations on load
+            setTimeout(() => {
+                document.querySelector('.hero-content').classList.add('animate');
+            }, 100);
+            
+            setTimeout(() => {
+                const heroVisual = document.querySelector('.hero-visual');
+                if (heroVisual) {
+                    heroVisual.classList.add('animate');
+                }
+            }, 300);
+
+            // Initialize auto-typing
+            const typingElement = document.getElementById('typing-text');
+            if (typingElement) {
+                const typingTexts = [
+                    '📊 Building StatFlow: Real-time data insights',
+                    '🌾 Developing smart Agri-Tech solutions',
+                    '💻 Crafting modern web platforms',
+                    '📈 Turning data into decisions'
+                ];
+
+                const autoTyper = new AutoTyper(typingElement, typingTexts, {
+                    typeSpeed: 70,
+                    deleteSpeed: 35,
+                    pauseTime: 2000
+                });
+
+                // Start typing after hero animations
+                setTimeout(() => {
+                    autoTyper.start();
+                }, 800);
+            }
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > 50) {
+                navbar.classList.add('bg-white/98');
+                navbar.classList.remove('bg-white/95');
+            } else {
+                navbar.classList.add('bg-white/95');
+                navbar.classList.remove('bg-white/98');
+            }
+            
+            lastScrollY = currentScrollY;
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links with offset for fixed navbar
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80; // Account for navbar height
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Scroll-based section reveals
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.service-card, .project-card, .why-card, .process-card, .current-focus, .about-content, .social-proof, .contact-details, .contact-form').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Staggered animation for service cards
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach((card, index) => {
+            card.style.transitionDelay = `${index * 100}ms`;
+        });
+
+        // Staggered animation for project cards
+        const projectCards = document.querySelectorAll('.project-card');
+        projectCards.forEach((card, index) => {
+            card.style.transitionDelay = `${index * 150}ms`;
+        });
+
+        // Staggered animation for why cards
+        const whyCards = document.querySelectorAll('.why-card');
+        whyCards.forEach((card, index) => {
+            card.style.transitionDelay = `${index * 100}ms`;
+        });
+
+        // Staggered animation for process cards
+        const processCards = document.querySelectorAll('.process-card');
+        processCards.forEach((card, index) => {
+            card.style.transitionDelay = `${index * 150}ms`;
+        });
+
+        // Active link highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-gray-900');
+                link.classList.add('text-gray-600');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-gray-600');
+                    link.classList.add('text-gray-900');
+                }
+            });
+        });
+
+        // Form submission with validation and Formspree integration
+        const contactForm = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const submitText = document.getElementById('submit-text');
+        const submitSpinner = document.getElementById('submit-spinner');
+        const successMessage = document.getElementById('success-message');
+        const errorMessage = document.getElementById('error-message');
+
+        // Form validation
+        function validateForm() {
+            let isValid = true;
+            
+            // Reset previous errors
+            document.querySelectorAll('.text-red-500').forEach(error => error.classList.add('hidden'));
+            
+            // Validate name
+            const name = document.getElementById('name').value.trim();
+            if (!name) {
+                document.getElementById('name-error').classList.remove('hidden');
+                isValid = false;
+            }
+            
+            // Validate email
+            const email = document.getElementById('email').value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email || !emailRegex.test(email)) {
+                document.getElementById('email-error').classList.remove('hidden');
+                isValid = false;
+            }
+            
+            // Validate message
+            const message = document.getElementById('message').value.trim();
+            if (!message) {
+                document.getElementById('message-error').classList.remove('hidden');
+                isValid = false;
+            }
+            
+            return isValid;
+        }
+
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Hide previous messages
+            successMessage.classList.add('hidden');
+            errorMessage.classList.add('hidden');
+            
+            // Validate form
+            if (!validateForm()) {
+                return;
+            }
+            
+            // Show loading state
+            submitBtn.disabled = true;
+            submitText.textContent = 'Sending...';
+            submitSpinner.classList.remove('hidden');
+            
+            try {
+                // Submit to Formspree
+                const formData = new FormData(contactForm);
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    // Success
+                    successMessage.classList.remove('hidden');
+                    contactForm.reset();
+                    // Scroll to success message
+                    successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
+                    // Error
+                    errorMessage.classList.remove('hidden');
+                }
+            } catch (error) {
+                // Network error
+                errorMessage.classList.remove('hidden');
+            } finally {
+                // Reset button state
+                submitBtn.disabled = false;
+                submitText.textContent = 'Send Message';
+                submitSpinner.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
