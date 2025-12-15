@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updates & Insights - Tech-X</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'tech-blue': '#1e40af',
+                        'tech-indigo': '#1e3a8a',
+                        'tech-accent': '#3b82f6',
+                        'tech-gray': '#374151'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-tech-gray font-sans">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-gray-900 tracking-tight">Tech-X</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="index.html#services" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Services</a>
+                    <a href="index.html#projects" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Projects</a>
+                    <a href="updates.html" class="nav-link text-gray-900 font-medium transition-colors duration-200 relative">Updates</a>
+                    <a href="index.html#about" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">About</a>
+                    <a href="index.html#contact" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-6 py-4 space-y-3">
+                <a href="index.html#services" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Services</a>
+                <a href="index.html#projects" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Projects</a>
+                <a href="updates.html" class="block text-gray-900 font-medium transition-colors duration-200">Updates</a>
+                <a href="index.html#about" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">About</a>
+                <a href="index.html#contact" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Updates & Insights</h1>
+            <p class="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
+                Notes from the work we are doing, the systems we are building, and the ideas guiding Tech-X.
+            </p>
+        </div>
+    </section>
+
+    <!-- Updates Content -->
+    <section class="py-16 bg-gray-50/30">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <!-- Timeline Header -->
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-white rounded-full px-6 py-3 shadow-sm border border-gray-200 mb-8">
+                    <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse mr-3"></div>
+                    <span class="text-sm font-medium text-gray-700">Live Updates • December 2025</span>
+                </div>
+                
+                <!-- Visual Timeline -->
+                <div class="relative max-w-2xl mx-auto">
+                    <div class="absolute left-1/2 transform -translate-x-0.5 h-full w-0.5 bg-gradient-to-b from-tech-indigo via-green-500 to-blue-500"></div>
+                    <div class="flex justify-between items-center relative">
+                        <div class="bg-tech-indigo w-4 h-4 rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="bg-green-500 w-4 h-4 rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="bg-blue-500 w-4 h-4 rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="bg-tech-indigo w-4 h-4 rounded-full border-4 border-white shadow-lg"></div>
+                    </div>
+                    <div class="flex justify-between text-xs text-gray-500 mt-2">
+                        <span>Dec 15</span>
+                        <span>Dec 10</span>
+                        <span>Dec 5</span>
+                        <span>Nov 28</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="space-y-12">
+                
+                <!-- Update 1 - Featured StatFlow Update -->
+                <article class="update-card bg-gradient-to-br from-tech-indigo/5 to-tech-blue/5 rounded-xl p-8 shadow-sm border border-tech-indigo/20 opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center space-x-3">
+                            <time class="text-sm text-gray-500 font-medium">December 15, 2025</time>
+                            <span class="bg-tech-indigo text-white px-3 py-1 rounded-full text-sm font-medium">Featured</span>
+                        </div>
+                        <span class="bg-tech-indigo/10 text-tech-indigo px-3 py-1 rounded-full text-sm font-medium">Building</span>
+                    </div>
+                    
+                    <!-- StatFlow Branding -->
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-tech-indigo rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-2xl font-semibold text-gray-900">StatFlow Platform Architecture Complete</h2>
+                    </div>
+                    
+                    <div class="prose prose-lg text-gray-700 leading-relaxed mb-6">
+                        <p>We've finalized the core architecture for StatFlow, our real-time data analytics platform. The system is designed to handle large-scale statistical data processing with sub-second response times, making it ideal for government institutions and research organizations that need immediate access to critical insights.</p>
+                        
+                        <p>The platform features a microservices architecture built on modern cloud infrastructure, with automated data pipelines that can ingest, process, and visualize data from multiple sources simultaneously. We're particularly excited about the custom API layer that allows seamless integration with existing government systems.</p>
+                    </div>
+                    
+                    <!-- Technical Architecture Diagram -->
+                    <div class="bg-white/70 rounded-lg p-6 mb-6 border border-tech-indigo/10">
+                        <h4 class="text-sm font-semibold text-gray-900 mb-4">StatFlow Architecture Overview</h4>
+                        <div class="grid grid-cols-3 gap-4 text-center">
+                            <div class="bg-tech-indigo/10 rounded-lg p-3">
+                                <div class="w-8 h-8 bg-tech-indigo rounded-lg mx-auto mb-2 flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+                                    </svg>
+                                </div>
+                                <p class="text-xs font-medium text-gray-700">Data Ingestion</p>
+                            </div>
+                            <div class="bg-green-100 rounded-lg p-3">
+                                <div class="w-8 h-8 bg-green-600 rounded-lg mx-auto mb-2 flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                                    </svg>
+                                </div>
+                                <p class="text-xs font-medium text-gray-700">Processing Engine</p>
+                            </div>
+                            <div class="bg-blue-100 rounded-lg p-3">
+                                <div class="w-8 h-8 bg-blue-600 rounded-lg mx-auto mb-2 flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                    </svg>
+                                </div>
+                                <p class="text-xs font-medium text-gray-700">API & Visualization</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Progress Metrics -->
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-white/70 rounded-lg p-4 text-center">
+                            <div class="text-2xl font-bold text-tech-indigo mb-1">75%</div>
+                            <div class="text-xs text-gray-600">Architecture Complete</div>
+                        </div>
+                        <div class="bg-white/70 rounded-lg p-4 text-center">
+                            <div class="text-2xl font-bold text-green-600 mb-1">Q1</div>
+                            <div class="text-xs text-gray-600">Pilot Testing</div>
+                        </div>
+                    </div>
+                    
+                    <div class="prose prose-lg text-gray-700 leading-relaxed">
+                        <p><strong>Next phase:</strong> User interface development and pilot testing with select partners in Q1 2025.</p>
+                    </div>
+                </article>
+
+                <!-- Update 2 - Insight with Data Visualization -->
+                <article class="update-card bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-8 shadow-sm border border-green-200/50 opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="flex items-center justify-between mb-4">
+                        <time class="text-sm text-gray-500 font-medium">December 10, 2025</time>
+                        <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Insight</span>
+                    </div>
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-6">Data-Driven Decision Making in African Context</h2>
+                    
+                    <div class="prose prose-lg text-gray-700 leading-relaxed mb-6">
+                        <p>Through our research and development work, we've identified key challenges that African institutions face when implementing data-driven decision making systems. The primary barriers aren't technical—they're cultural and infrastructural.</p>
+                    </div>
+                    
+                    <!-- Key Insight Visualization -->
+                    <div class="bg-white/80 rounded-lg p-6 mb-6 border border-green-200">
+                        <h4 class="text-sm font-semibold text-gray-900 mb-4">Primary Implementation Barriers</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <div class="w-24 text-xs text-gray-600">Cultural (45%)</div>
+                                <div class="flex-1 bg-gray-200 rounded-full h-2 mx-3">
+                                    <div class="bg-red-500 h-2 rounded-full" style="width: 45%"></div>
+                                </div>
+                                <div class="text-xs text-gray-500">Resistance to change</div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-24 text-xs text-gray-600">Infrastructure (35%)</div>
+                                <div class="flex-1 bg-gray-200 rounded-full h-2 mx-3">
+                                    <div class="bg-yellow-500 h-2 rounded-full" style="width: 35%"></div>
+                                </div>
+                                <div class="text-xs text-gray-500">System limitations</div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-24 text-xs text-gray-600">Technical (20%)</div>
+                                <div class="flex-1 bg-gray-200 rounded-full h-2 mx-3">
+                                    <div class="bg-green-500 h-2 rounded-full" style="width: 20%"></div>
+                                </div>
+                                <div class="text-xs text-gray-500">Skills & tools</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Key Quote -->
+                    <div class="bg-white/70 rounded-lg p-6 mb-6 border-l-4 border-green-500">
+                        <p class="text-lg text-gray-700 italic font-medium">
+                            "Most organizations have the data they need, but lack the tools to transform it into actionable insights quickly enough to influence policy or business decisions."
+                        </p>
+                    </div>
+                    
+                    <div class="prose prose-lg text-gray-700 leading-relaxed">
+                        <p>This is where platforms like StatFlow become crucial: they bridge the gap between raw data and real-world impact. Our approach focuses on building systems that work within existing workflows rather than requiring complete organizational restructuring.</p>
+                    </div>
+                </article>
+
+                <!-- Update 3 -->
+                <article class="update-card bg-white rounded-xl p-8 shadow-sm border border-gray-100 opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="flex items-center justify-between mb-4">
+                        <time class="text-sm text-gray-500 font-medium">December 5, 2025</time>
+                        <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Vision</span>
+                    </div>
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-4">Building for the Next Decade of African Innovation</h2>
+                    <div class="prose prose-lg text-gray-700 leading-relaxed">
+                        <p>As we establish Tech-X, we're thinking beyond immediate projects to the broader ecosystem we want to help create. Africa needs technology companies that understand local contexts while building to global standards.</p>
+                        
+                        <p>Our vision extends beyond individual products to creating a foundation for data-driven governance, evidence-based policy making, and transparent institutional operations. Every system we build is designed with scalability and interoperability in mind.</p>
+                        
+                        <p>The goal isn't just to build software—it's to build the digital infrastructure that enables better decision-making across sectors, from agriculture to healthcare to urban planning.</p>
+                    </div>
+                </article>
+
+                <!-- Update 4 -->
+                <article class="update-card bg-white rounded-xl p-8 shadow-sm border border-gray-100 opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="flex items-center justify-between mb-4">
+                        <time class="text-sm text-gray-500 font-medium">November 28, 2025</time>
+                        <span class="bg-tech-indigo/10 text-tech-indigo px-3 py-1 rounded-full text-sm font-medium">Building</span>
+                    </div>
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-4">Agri-Tech Platform Development Begins</h2>
+                    <div class="prose prose-lg text-gray-700 leading-relaxed">
+                        <p>We've started development on our comprehensive agri-tech platform, designed to connect smallholder farmers with markets, weather data, and financial services. The platform addresses three critical gaps we've identified in the agricultural value chain.</p>
+                        
+                        <p>First, information asymmetry—farmers often lack access to real-time market prices and weather forecasts. Second, market access—connecting producers directly with buyers reduces intermediary costs. Third, financial inclusion—integrating mobile money and micro-lending services.</p>
+                        
+                        <p>The technical architecture leverages SMS, USSD, and mobile app interfaces to ensure accessibility across different technology adoption levels in rural communities.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-3 text-white">Tech-X</h3>
+                <p class="text-gray-400 mb-8 text-lg">Innovating with purpose.</p>
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-gray-400 text-sm">&copy; 2025 Tech-X. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Styles -->
+    <style>
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            background-color: #1e3a8a;
+            transition: all 0.2s ease-in-out;
+            transform: translateX(-50%);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Scroll-based animations */
+        .update-card.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Scroll-based section reveals
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all update cards
+        document.querySelectorAll('.update-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Staggered animation for update cards
+        const updateCards = document.querySelectorAll('.update-card');
+        updateCards.forEach((card, index) => {
+            card.style.transitionDelay = `${index * 150}ms`;
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > 50) {
+                navbar.classList.add('bg-white/98');
+                navbar.classList.remove('bg-white/95');
+            } else {
+                navbar.classList.add('bg-white/95');
+                navbar.classList.remove('bg-white/98');
+            }
+        });
+    </script>
+</body>
+</html>
