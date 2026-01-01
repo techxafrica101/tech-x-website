@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Apex Solutions Ltd</title>
+    <meta name="description" content="Learn about Apex Solutions Ltd - Zambia's trusted partner for professional business services, consulting, and digital transformation.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'apex-blue': '#1e40af',
+                        'apex-indigo': '#1e3a8a',
+                        'apex-accent': '#3b82f6',
+                        'apex-gray': '#374151'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-apex-gray font-sans">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-apex-indigo rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">A</span>
+                        </div>
+                        <h1 class="text-xl font-bold text-gray-900">Apex Solutions Ltd</h1>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Home</a>
+                    <a href="about.html" class="nav-link text-gray-900 font-medium transition-colors duration-200 relative">About</a>
+                    <a href="services.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Services</a>
+                    <a href="projects.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Projects</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-6 py-4 space-y-3">
+                <a href="index.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Home</a>
+                <a href="about.html" class="block text-gray-900 font-medium transition-colors duration-200">About</a>
+                <a href="services.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Services</a>
+                <a href="projects.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Projects</a>
+                <a href="contact.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-gray-50 to-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">About Apex Solutions</h1>
+            <p class="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                Your trusted partner for professional business services, strategic consulting, and digital transformation in Zambia.
+            </p>
+        </div>
+    </section>
+
+    <!-- Company Overview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Who We Are</h2>
+                    <div class="prose prose-lg text-gray-700 leading-relaxed">
+                        <p class="mb-6">
+                            Apex Solutions Ltd is a leading professional services company based in Zambia, dedicated to helping businesses achieve sustainable growth and operational excellence. Since our establishment in 2016, we have been at the forefront of business transformation, combining deep local market knowledge with international best practices.
+                        </p>
+                        
+                        <p class="mb-6">
+                            Our team of experienced consultants, project managers, and digital specialists work closely with clients across various industries to deliver tailored solutions that drive measurable results. We understand the unique challenges facing businesses in the Zambian market and leverage this insight to create strategies that work.
+                        </p>
+                        
+                        <p>
+                            From small and medium enterprises to large corporations, we have successfully partnered with organizations to streamline operations, implement digital solutions, and achieve their strategic objectives.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-white rounded-2xl p-8 shadow-xl border border-gray-200/50">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-6">Our Impact</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <div class="text-3xl font-bold text-apex-indigo">150+</div>
+                                    <div class="text-sm text-gray-600">Projects Completed</div>
+                                </div>
+                                <div class="w-16 h-16 bg-apex-indigo/10 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-project-diagram text-apex-indigo text-xl"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <div class="text-3xl font-bold text-green-600">95%</div>
+                                    <div class="text-sm text-gray-600">Client Satisfaction</div>
+                                </div>
+                                <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-smile text-green-600 text-xl"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <div class="text-3xl font-bold text-blue-600">8+</div>
+                                    <div class="text-sm text-gray-600">Years Experience</div>
+                                </div>
+                                <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-calendar-alt text-blue-600 text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Mission & Vision</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Driving business excellence through strategic guidance and innovative solutions.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Mission -->
+                <div class="bg-white rounded-2xl p-10 shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-apex-indigo/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-bullseye text-apex-indigo text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Mission</h3>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        To empower businesses in Zambia with strategic consulting, digital solutions, and expert project management services that drive sustainable growth, operational efficiency, and competitive advantage in the modern marketplace.
+                    </p>
+                </div>
+                
+                <!-- Vision -->
+                <div class="bg-white rounded-2xl p-10 shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-eye text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Vision</h3>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        To be the leading professional services firm in Zambia, recognized for our expertise, integrity, and commitment to transforming businesses through innovative solutions and strategic partnerships.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Core Values</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    The principles that guide everything we do and define who we are as a company.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Value 1 -->
+                <div class="value-card text-center">
+                    <div class="w-20 h-20 bg-apex-indigo/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-apex-indigo text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Integrity</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We conduct business with the highest ethical standards, transparency, and honesty in all our interactions.
+                    </p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="value-card text-center">
+                    <div class="w-20 h-20 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-lightbulb text-green-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Innovation</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We embrace creative thinking and cutting-edge solutions to solve complex business challenges.
+                    </p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="value-card text-center">
+                    <div class="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-star text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Excellence</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We strive for exceptional quality in every project, exceeding client expectations consistently.
+                    </p>
+                </div>
+
+                <!-- Value 4 -->
+                <div class="value-card text-center">
+                    <div class="w-20 h-20 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-purple-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Partnership</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We build long-term relationships based on trust, collaboration, and mutual success.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-20 bg-apex-indigo">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
+                8+ Years of Proven Excellence
+            </h2>
+            <p class="text-xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
+                Since 2016, we have been helping businesses across Zambia transform their operations, embrace digital innovation, and achieve sustainable growth through our comprehensive suite of professional services.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-white mb-2">150+</div>
+                    <div class="text-blue-200">Successful Projects</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-white mb-2">50+</div>
+                    <div class="text-blue-200">Happy Clients</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-white mb-2">15+</div>
+                    <div class="text-blue-200">Industries Served</div>
+                </div>
+            </div>
+            
+            <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 bg-white text-apex-indigo font-semibold rounded-lg hover:bg-gray-100 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl">
+                Partner With Us Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/260776082004" target="_blank" class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-apex-indigo rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">A</span>
+                        </div>
+                        <h3 class="text-xl font-bold">Apex Solutions Ltd</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Professional business services company dedicated to helping enterprises in Zambia achieve sustainable growth through strategic consulting and digital transformation.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors duration-200">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors duration-200">Services</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white transition-colors duration-200">Projects</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors duration-200">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            Lusaka, Zambia
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone mr-3"></i>
+                            +260 XXX XXX XXX
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope mr-3"></i>
+                            info@apexsolutions.zm
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Apex Solutions Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Styles -->
+    <style>
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            background-color: #1e3a8a;
+            transition: all 0.2s ease-in-out;
+            transform: translateX(-50%);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > 50) {
+                navbar.classList.add('bg-white/98');
+                navbar.classList.remove('bg-white/95');
+            } else {
+                navbar.classList.add('bg-white/95');
+                navbar.classList.remove('bg-white/98');
+            }
+        });
+    </script>
+</body>
+</html>

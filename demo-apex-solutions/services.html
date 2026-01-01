@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Apex Solutions Ltd</title>
+    <meta name="description" content="Professional business services including consulting, digital solutions, project management, and customer support in Zambia.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'apex-blue': '#1e40af',
+                        'apex-indigo': '#1e3a8a',
+                        'apex-accent': '#3b82f6',
+                        'apex-gray': '#374151'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-apex-gray font-sans">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-apex-indigo rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">A</span>
+                        </div>
+                        <h1 class="text-xl font-bold text-gray-900">Apex Solutions Ltd</h1>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Home</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">About</a>
+                    <a href="services.html" class="nav-link text-gray-900 font-medium transition-colors duration-200 relative">Services</a>
+                    <a href="projects.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Projects</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-6 py-4 space-y-3">
+                <a href="index.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Home</a>
+                <a href="about.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">About</a>
+                <a href="services.html" class="block text-gray-900 font-medium transition-colors duration-200">Services</a>
+                <a href="projects.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Projects</a>
+                <a href="contact.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-gray-50 to-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Our Services</h1>
+            <p class="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                Comprehensive business solutions designed to drive growth, efficiency, and competitive advantage for your organization.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Service 1: Business Consulting -->
+                <div class="service-card bg-white rounded-2xl p-10 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-20 h-20 bg-apex-indigo/10 rounded-2xl flex items-center justify-center mb-8">
+                        <i class="fas fa-chart-line text-apex-indigo text-3xl"></i>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Business Consulting</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Strategic guidance to optimize your business operations, improve efficiency, and accelerate sustainable growth through data-driven insights and proven methodologies.
+                    </p>
+                    
+                    <div class="mb-8">
+                        <h4 class="font-semibold text-gray-900 mb-4">Key Benefits:</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-apex-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-600">Strategic planning and market analysis</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-apex-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-600">Operational efficiency improvements</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-apex-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-600">Financial performance optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-apex-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-600">Risk management and compliance</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a href="contact.html" class="inline-flex items-center text-apex-indigo font-semibold hover:text-apex-blue transition-colors duration-200">
+                        Learn More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Service 2: Digital Solutions -->
+                <div class="service-card bg-white rounded-2xl p-10 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-20 h-20 bg-green-100 rounded-2xl flex items-center justify-center mb-8">
+                        <i class="fas fa-laptop-code text-green-600 text-3xl"></i>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Digital Solutions</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Modern technology implementations to digitize your processes, enhance productivity, and position your business for the digital age.
+                    </p>
+                    
+                    <div class="mb-8">
+                        <h4 class="font-semibold text-gray-900 mb-4">Key Benefits:</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-600">Custom software development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-600">Process automation and digitization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-600">Data management and analytics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-600">Cloud migration and integration</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a href="contact.html" class="inline-flex items-center text-green-600 font-semibold hover:text-green-700 transition-colors duration-200">
+                        Learn More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Service 3: Project Management -->
+                <div class="service-card bg-white rounded-2xl p-10 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center mb-8">
+                        <i class="fas fa-project-diagram text-blue-600 text-3xl"></i>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Project Management</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        End-to-end project delivery with proven methodologies, expert oversight, and a focus on delivering results on time and within budget.
+                    </p>
+                    
+                    <div class="mb-8">
+                        <h4 class="font-semibold text-gray-900 mb-4">Key Benefits:</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-600">Comprehensive project planning</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-600">Resource allocation and management</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-600">Risk mitigation and quality control</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-600">Stakeholder communication</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a href="contact.html" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-200">
+                        Learn More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Service 4: Customer Support -->
+                <div class="service-card bg-white rounded-2xl p-10 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-20 h-20 bg-purple-100 rounded-2xl flex items-center justify-center mb-8">
+                        <i class="fas fa-headset text-purple-600 text-3xl"></i>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Customer Support</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Comprehensive support services to ensure your business operations run smoothly and your customers receive exceptional service.
+                    </p>
+                    
+                    <div class="mb-8">
+                        <h4 class="font-semibold text-gray-900 mb-4">Key Benefits:</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-600">24/7 technical support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-600">Customer service optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-600">Training and knowledge transfer</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-600">Performance monitoring</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a href="contact.html" class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 transition-colors duration-200">
+                        Learn More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Process</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    A proven methodology that ensures successful project delivery and client satisfaction.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="process-step text-center">
+                    <div class="relative mb-8">
+                        <div class="w-16 h-16 bg-apex-indigo rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-white">1</span>
+                        </div>
+                        <div class="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gray-200 -translate-y-0.5"></div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Discovery</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Understanding your business needs, challenges, and objectives.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-step text-center">
+                    <div class="relative mb-8">
+                        <div class="w-16 h-16 bg-apex-indigo rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-white">2</span>
+                        </div>
+                        <div class="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gray-200 -translate-y-0.5"></div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Strategy</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Developing tailored solutions and implementation roadmaps.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-step text-center">
+                    <div class="relative mb-8">
+                        <div class="w-16 h-16 bg-apex-indigo rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-white">3</span>
+                        </div>
+                        <div class="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gray-200 -translate-y-0.5"></div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Implementation</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Executing solutions with careful monitoring and quality control.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="process-step text-center">
+                    <div class="relative mb-8">
+                        <div class="w-16 h-16 bg-apex-indigo rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-white">4</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Support</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Ongoing support and optimization for sustained success.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-apex-indigo">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
+                Ready to Get Started?
+            </h2>
+            <p class="text-xl text-blue-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Let's discuss how our services can help transform your business and drive sustainable growth.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 bg-white text-apex-indigo font-semibold rounded-lg hover:bg-gray-100 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl">
+                    Request Consultation
+                </a>
+                <a href="projects.html" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-apex-indigo transition-all duration-200">
+                    View Our Work
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/260776082004" target="_blank" class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-apex-indigo rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">A</span>
+                        </div>
+                        <h3 class="text-xl font-bold">Apex Solutions Ltd</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Professional business services company dedicated to helping enterprises in Zambia achieve sustainable growth through strategic consulting and digital transformation.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors duration-200">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors duration-200">Services</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white transition-colors duration-200">Projects</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors duration-200">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            Lusaka, Zambia
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone mr-3"></i>
+                            +260 XXX XXX XXX
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope mr-3"></i>
+                            info@apexsolutions.zm
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Apex Solutions Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Styles -->
+    <style>
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            background-color: #1e3a8a;
+            transition: all 0.2s ease-in-out;
+            transform: translateX(-50%);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > 50) {
+                navbar.classList.add('bg-white/98');
+                navbar.classList.remove('bg-white/95');
+            } else {
+                navbar.classList.add('bg-white/95');
+                navbar.classList.remove('bg-white/98');
+            }
+        });
+    </script>
+</body>
+</html>
