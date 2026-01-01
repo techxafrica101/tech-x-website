@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Tech-X</title>
+    <meta name="description" content="Professional digital solutions for schools, businesses, and institutions in Zambia - Website Development, Digital Documents, and Simple Digital Systems.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'tech-blue': '#1e40af',
+                        'tech-indigo': '#1e3a8a',
+                        'tech-accent': '#3b82f6',
+                        'tech-gray': '#374151'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-tech-gray font-sans">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center" onclick="scrollToTop(); return false;">
+                        <!-- Logo Image -->
+                        <img src="assets/images/logo.png" alt="Tech-X Logo" class="h-10 w-auto hover:opacity-80 transition-opacity duration-200">
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="services.html" class="nav-link text-gray-900 font-medium transition-colors duration-200 relative">Services</a>
+                    <a href="projects.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Projects</a>
+                    <a href="updates.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Updates</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">About</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-6 py-4 space-y-3">
+                <a href="services.html" class="block text-gray-900 font-medium transition-colors duration-200">Services</a>
+                <a href="projects.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Projects</a>
+                <a href="updates.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Updates</a>
+                <a href="about.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">About</a>
+                <a href="contact.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-gray-50 to-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Our Services</h1>
+            <p class="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                Professional digital solutions for schools, businesses, and institutions in Zambia.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: Website Development -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-0 translate-y-4">
+                    <div class="w-16 h-16 bg-tech-indigo/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-globe text-tech-indigo text-2xl"></i>
+                    </div>
+                    
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Website Development</h3>
+                    <p class="text-gray-600 mb-6">For schools, clinics, NGOs, SMEs</p>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-gray-900 mb-3">Features:</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-tech-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                4–6 professional pages
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-tech-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Mobile-friendly design
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-tech-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Contact or booking form
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-tech-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Basic SEO setup
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-tech-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Social media & WhatsApp integration
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-tech-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Hosting & domain guidance
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="border-t border-gray-100 pt-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <div>
+                                <div class="text-2xl font-bold text-tech-indigo">ZMW 2,500 – 4,000</div>
+                                <div class="text-sm text-gray-500">Price range</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-semibold text-gray-900">5–10 days</div>
+                                <div class="text-sm text-gray-500">Delivery</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Digital Documents -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-0 translate-y-4">
+                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-file-alt text-green-600 text-2xl"></i>
+                    </div>
+                    
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Digital Documents & Profiles</h3>
+                    <p class="text-gray-600 mb-6">For companies, NGOs, cooperatives, lending institutions</p>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-gray-900 mb-3">Includes:</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Company profiles
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Business & NGO proposals
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Contracts & agreements
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Branded reports & PDFs
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="border-t border-gray-100 pt-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <div>
+                                <div class="text-2xl font-bold text-green-600">ZMW 800 – 2,000</div>
+                                <div class="text-sm text-gray-500">Price range</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-semibold text-gray-900">2–5 days</div>
+                                <div class="text-sm text-gray-500">Delivery</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Digital Systems -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-0 translate-y-4 md:col-span-2 lg:col-span-1">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-blue-600 text-2xl"></i>
+                    </div>
+                    
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Simple Digital Systems</h3>
+                    <p class="text-gray-600 mb-6">For schools, lodges, and growing businesses</p>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-gray-900 mb-3">Includes:</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Student portals
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Booking systems
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Basic databases & dashboards
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                User login & admin panel
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Data entry & reports
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="border-t border-gray-100 pt-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <div>
+                                <div class="text-2xl font-bold text-blue-600">ZMW 3,500 – 6,000</div>
+                                <div class="text-sm text-gray-500">Price range</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-semibold text-gray-900">7–14 days</div>
+                                <div class="text-sm text-gray-500">Delivery</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="text-center mt-16">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                    Ready to take your institution or business digital?
+                </h3>
+                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Get started with professional digital solutions tailored for Zambian schools, businesses, and institutions.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 bg-tech-indigo text-white font-semibold rounded-lg hover:bg-tech-blue transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl">
+                        Request a Quote
+                    </a>
+                    <a href="https://wa.me/260776082004" target="_blank" class="inline-flex items-center justify-center px-8 py-4 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl">
+                        <i class="fab fa-whatsapp text-xl mr-3"></i>
+                        Contact Tech-X
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Back to Top Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button id="back-to-top" class="bg-tech-indigo hover:bg-tech-blue text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 opacity-0 translate-y-4" onclick="scrollToTop()">
+            <i class="fas fa-arrow-up text-lg"></i>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <img src="assets/images/logo.png" alt="Tech-X Logo" class="h-10 w-auto">
+                        <h3 class="text-xl font-bold">Tech-X</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Building smart digital solutions for Africa. We design data platforms, web solutions, and digital tools that solve real-world problems with precision and impact.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors duration-200">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors duration-200">Services</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white transition-colors duration-200">Projects</a></li>
+                        <li><a href="updates.html" class="text-gray-400 hover:text-white transition-colors duration-200">Updates</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors duration-200">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            Zambia
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone mr-3"></i>
+                            +260 776 082 004
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope mr-3"></i>
+                            techx.africa101@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center">
+                <p class="text-gray-400">&copy; 2026 Tech-X. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Styles -->
+    <style>
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            background-color: #1e3a8a;
+            transition: all 0.2s ease-in-out;
+            transform: translateX(-50%);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Scroll-based animations */
+        .service-card.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > 50) {
+                navbar.classList.add('bg-white/98');
+                navbar.classList.remove('bg-white/95');
+            } else {
+                navbar.classList.add('bg-white/95');
+                navbar.classList.remove('bg-white/98');
+            }
+        });
+
+        // Scroll-based section reveals
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all service cards
+        document.querySelectorAll('.service-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Staggered animation for service cards
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach((card, index) => {
+            card.style.transitionDelay = `${index * 150}ms`;
+        });
+
+        // Back to Top functionality
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        // Function to scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        
+        // Show/hide back to top button based on scroll position
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'translate-y-4');
+                backToTopBtn.classList.add('opacity-100', 'translate-y-0');
+            } else {
+                backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+                backToTopBtn.classList.add('opacity-0', 'translate-y-4');
+            }
+        });
+
+        // Make scrollToTop function globally available
+        window.scrollToTop = scrollToTop;
+    </script>
+</body>
+</html>

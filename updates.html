@@ -39,11 +39,11 @@
                 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-10">
-                    <a href="index.html#services" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Services</a>
-                    <a href="index.html#projects" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Projects</a>
+                    <a href="services.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Services</a>
+                    <a href="projects.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Projects</a>
                     <a href="updates.html" class="nav-link text-gray-900 font-medium transition-colors duration-200 relative">Updates</a>
-                    <a href="index.html#about" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">About</a>
-                    <a href="index.html#contact" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Contact</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">About</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Contact</a>
                 </div>
                 
                 <!-- Mobile menu button -->
@@ -60,11 +60,11 @@
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
             <div class="px-6 py-4 space-y-3">
-                <a href="index.html#services" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Services</a>
-                <a href="index.html#projects" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Projects</a>
+                <a href="services.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Services</a>
+                <a href="projects.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Projects</a>
                 <a href="updates.html" class="block text-gray-900 font-medium transition-colors duration-200">Updates</a>
-                <a href="index.html#about" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">About</a>
-                <a href="index.html#contact" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Contact</a>
+                <a href="about.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">About</a>
+                <a href="contact.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Contact</a>
             </div>
         </div>
     </nav>
@@ -281,12 +281,63 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-16">
         <div class="max-w-6xl mx-auto px-6 lg:px-8">
-            <div class="text-center">
-                <h3 class="text-2xl font-bold mb-3 text-white">Tech-X</h3>
-                <p class="text-gray-400 mb-8 text-lg">Innovating with purpose.</p>
-                <div class="border-t border-gray-700 pt-8">
-                    <p class="text-gray-400 text-sm">&copy; 2025 Tech-X. All rights reserved.</p>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <img src="assets/images/logo.png" alt="Tech-X Logo" class="h-10 w-auto">
+                        <h3 class="text-xl font-bold">Tech-X</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Building smart digital solutions for Africa. We design data platforms, web solutions, and digital tools that solve real-world problems with precision and impact.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
                 </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors duration-200">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors duration-200">Services</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white transition-colors duration-200">Projects</a></li>
+                        <li><a href="updates.html" class="text-gray-400 hover:text-white transition-colors duration-200">Updates</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors duration-200">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            Zambia
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone mr-3"></i>
+                            +260 776 082 004
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope mr-3"></i>
+                            techx.africa101@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center">
+                <p class="text-gray-400">&copy; 2026 Tech-X. All rights reserved.</p>
             </div>
         </div>
     </footer>
