@@ -32,11 +32,10 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <div class="flex-shrink-0">
-                    <div class="flex items-center space-x-3">
+                    <a href="#" class="flex items-center" onclick="scrollToTop(); return false;">
                         <!-- Logo Image -->
-                        <img src="assets/images/logo.png" alt="Tech-X Logo" class="h-8 w-auto">
-                        <h1 class="text-2xl font-bold text-gray-900 tracking-tight">Tech-X</h1>
-                    </div>
+                        <img src="assets/images/logo.png" alt="Tech-X Logo" class="h-10 w-auto hover:opacity-80 transition-opacity duration-200">
+                    </a>
                 </div>
                 
                 <!-- Desktop Navigation -->
@@ -864,8 +863,14 @@
         </div>
     </section>
 
-    <!-- Floating WhatsApp Button -->
-    <div class="fixed bottom-6 right-6 z-50">
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="bg-tech-indigo hover:bg-tech-blue text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 opacity-0 translate-y-4" onclick="scrollToTop()">
+            <i class="fas fa-arrow-up text-lg"></i>
+        </button>
+        
+        <!-- WhatsApp Button -->
         <a href="https://wa.me/260776082004" target="_blank" class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110">
             <i class="fab fa-whatsapp text-2xl"></i>
         </a>
@@ -1293,6 +1298,31 @@
                 submitSpinner.classList.add('hidden');
             }
         });
+
+        // Back to Top functionality
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        // Function to scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        
+        // Show/hide back to top button based on scroll position
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'translate-y-4');
+                backToTopBtn.classList.add('opacity-100', 'translate-y-0');
+            } else {
+                backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+                backToTopBtn.classList.add('opacity-0', 'translate-y-4');
+            }
+        });
+
+        // Make scrollToTop function globally available
+        window.scrollToTop = scrollToTop;
     </script>
 </body>
 </html>
