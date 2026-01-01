@@ -37,7 +37,7 @@
                 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-10">
-                    <a href="services.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Services</a>
+                    <a href="#services" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Services</a>
                     <a href="#projects" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Projects</a>
                     <a href="updates.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">Updates</a>
                     <a href="#about" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200 relative">About</a>
@@ -58,7 +58,7 @@
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
             <div class="px-6 py-4 space-y-3">
-                <a href="services.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Services</a>
+                <a href="#services" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Services</a>
                 <a href="#projects" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Projects</a>
                 <a href="updates.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Updates</a>
                 <a href="#about" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">About</a>
@@ -140,64 +140,176 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-tech-indigo mb-4">Our Services</h2>
                 <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    We deliver innovative technology solutions tailored to African markets and global standards.
+                    Professional digital solutions for schools, businesses, and institutions in Zambia.
                 </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-tech-accent text-4xl mb-4">
-                        <i class="fas fa-chart-line"></i>
+                <!-- Service 1: Website Development -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-0 translate-y-4">
+                    <div class="w-16 h-16 bg-tech-indigo/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-globe text-tech-indigo text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-tech-indigo mb-3">Data & Analytics Solutions</h3>
-                    <p class="text-gray-600">
-                        Dashboards, insights, APIs, and data visualization tools that transform raw data into actionable intelligence.
-                    </p>
+                    
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Website Development</h3>
+                    <p class="text-gray-600 mb-6">For schools, clinics, NGOs, SMEs</p>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-gray-900 mb-3">Features:</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-tech-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                4–6 professional pages
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-tech-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Mobile-friendly design
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-tech-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Contact or booking form
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-tech-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Basic SEO setup
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-tech-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Social media & WhatsApp integration
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-tech-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Hosting & domain guidance
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="border-t border-gray-100 pt-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <div>
+                                <div class="text-2xl font-bold text-tech-indigo">ZMW 2,500 – 4,000</div>
+                                <div class="text-sm text-gray-500">Price range</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-semibold text-gray-900">5–10 days</div>
+                                <div class="text-sm text-gray-500">Delivery</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-tech-accent text-4xl mb-4">
-                        <i class="fas fa-code"></i>
+                <!-- Service 2: Digital Documents -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-0 translate-y-4">
+                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-file-alt text-green-600 text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-tech-indigo mb-3">Web & Software Development</h3>
-                    <p class="text-gray-600">
-                        Modern, scalable web applications built with cutting-edge technologies and best practices.
-                    </p>
+                    
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Digital Documents & Profiles</h3>
+                    <p class="text-gray-600 mb-6">For companies, NGOs, cooperatives, lending institutions</p>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-gray-900 mb-3">Includes:</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Company profiles
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Business & NGO proposals
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Contracts & agreements
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Branded reports & PDFs
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="border-t border-gray-100 pt-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <div>
+                                <div class="text-2xl font-bold text-green-600">ZMW 800 – 2,000</div>
+                                <div class="text-sm text-gray-500">Price range</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-semibold text-gray-900">2–5 days</div>
+                                <div class="text-sm text-gray-500">Delivery</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Service 3 -->
-                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-tech-accent text-4xl mb-4">
-                        <i class="fas fa-seedling"></i>
+                <!-- Service 3: Digital Systems -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-0 translate-y-4 md:col-span-2 lg:col-span-1">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-blue-600 text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-tech-indigo mb-3">Agri-Tech & Smart Farming Solutions</h3>
-                    <p class="text-gray-600">
-                        Digital tools for farmers and cooperatives to optimize productivity and market access.
-                    </p>
+                    
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Simple Digital Systems</h3>
+                    <p class="text-gray-600 mb-6">For schools, lodges, and growing businesses</p>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-gray-900 mb-3">Includes:</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Student portals
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Booking systems
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Basic databases & dashboards
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                User login & admin panel
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                Data entry & reports
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="border-t border-gray-100 pt-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <div>
+                                <div class="text-2xl font-bold text-blue-600">ZMW 3,500 – 6,000</div>
+                                <div class="text-sm text-gray-500">Price range</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-semibold text-gray-900">7–14 days</div>
+                                <div class="text-sm text-gray-500">Delivery</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Service 4 -->
-                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-tech-accent text-4xl mb-4">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-tech-indigo mb-3">Business Registration & Digital Compliance</h3>
-                    <p class="text-gray-600">
-                        Tech-enabled business support services that streamline registration and compliance processes.
-                    </p>
-                </div>
-
-                <!-- Service 5 -->
-                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 md:col-span-2 lg:col-span-1">
-                    <div class="text-tech-accent text-4xl mb-4">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-tech-indigo mb-3">Digital Skills & Coding Training</h3>
-                    <p class="text-gray-600">
-                        Practical training programs for youths and startups to build digital capabilities.
-                    </p>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="text-center mt-16">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                    Ready to take your institution or business digital?
+                </h3>
+                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Get started with professional digital solutions tailored for Zambian schools, businesses, and institutions.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-tech-indigo text-white font-semibold rounded-lg hover:bg-tech-blue transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl">
+                        Request a Quote
+                    </a>
+                    <a href="https://wa.me/260776082004" target="_blank" class="inline-flex items-center justify-center px-8 py-4 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl">
+                        <i class="fab fa-whatsapp text-xl mr-3"></i>
+                        Contact Tech-X
+                    </a>
                 </div>
             </div>
         </div>
