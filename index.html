@@ -32,7 +32,11 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <div class="flex-shrink-0">
-                    <h1 class="text-2xl font-bold text-gray-900 tracking-tight">Tech-X</h1>
+                    <div class="flex items-center space-x-3">
+                        <!-- Logo Image (uncomment when you upload your logo) -->
+                        <!-- <img src="assets/images/logo.png" alt="Tech-X Logo" class="h-8 w-auto"> -->
+                        <h1 class="text-2xl font-bold text-gray-900 tracking-tight">Tech-X</h1>
+                    </div>
                 </div>
                 
                 <!-- Desktop Navigation -->
@@ -976,8 +980,48 @@
                 this.isPaused = false;
             }
 
+            // Helper function to strip HTML tags for character counting
+            stripHtml(html) {
+                const temp = document.createElement('div');
+                temp.innerHTML = html;
+                return temp.textContent || temp.innerText || '';
+            }
+
+            // Helper function to get HTML substring that preserves tags
+            getHtmlSubstring(html, length) {
+                const temp = document.createElement('div');
+                temp.innerHTML = html;
+                const textContent = temp.textContent || temp.innerText || '';
+                
+                if (length >= textContent.length) {
+                    return html;
+                }
+                
+                // For simplicity, if we're in the middle of typing, show the full HTML
+                // This ensures icons are always visible when their text starts appearing
+                const visibleText = textContent.substring(0, length);
+                if (visibleText.length === 0) {
+                    return '';
+                }
+                
+                // If we have some characters, show the full HTML up to this point
+                // This is a simplified approach - for more complex HTML, you'd need a more sophisticated parser
+                if (html.includes('<i class="fas')) {
+                    const iconMatch = html.match(/(<i class="fas[^>]*><\/i>)/);
+                    if (iconMatch && length > 0) {
+                        const iconHtml = iconMatch[1];
+                        const textAfterIcon = html.replace(iconMatch[1], '').trim();
+                        const textPortion = textAfterIcon.substring(0, Math.max(0, length - 2)); // Account for icon space
+                        return iconHtml + ' ' + textPortion;
+                    }
+                }
+                
+                return visibleText;
+            }
+
             type() {
                 const currentText = this.texts[this.currentTextIndex];
+                const plainText = this.stripHtml(currentText);
                 
                 if (this.isPaused) {
                     setTimeout(() => {
@@ -987,17 +1031,17 @@
                     return;
                 }
 
-                if (!this.isDeleting && this.currentCharIndex < currentText.length) {
+                if (!this.isDeleting && this.currentCharIndex < plainText.length) {
                     // Typing
-                    this.element.textContent = currentText.substring(0, this.currentCharIndex + 1);
+                    this.element.innerHTML = this.getHtmlSubstring(currentText, this.currentCharIndex + 1);
                     this.currentCharIndex++;
                     setTimeout(() => this.type(), this.typeSpeed);
                 } else if (this.isDeleting && this.currentCharIndex > 0) {
                     // Deleting
-                    this.element.textContent = currentText.substring(0, this.currentCharIndex - 1);
+                    this.element.innerHTML = this.getHtmlSubstring(currentText, this.currentCharIndex - 1);
                     this.currentCharIndex--;
                     setTimeout(() => this.type(), this.deleteSpeed);
-                } else if (!this.isDeleting && this.currentCharIndex === currentText.length) {
+                } else if (!this.isDeleting && this.currentCharIndex === plainText.length) {
                     // Finished typing, pause then start deleting
                     this.isPaused = true;
                     this.isDeleting = true;
@@ -1033,10 +1077,10 @@
             const typingElement = document.getElementById('typing-text');
             if (typingElement) {
                 const typingTexts = [
-                    '📊 Building StatFlow: Real-time data insights',
-                    '🌾 Developing smart Agri-Tech solutions',
-                    '💻 Crafting modern web platforms',
-                    '📈 Turning data into decisions'
+                    '<i class="fas fa-chart-line text-tech-indigo"></i> Building StatFlow: Real-time data insights',
+                    '<i class="fas fa-globe text-green-600"></i> Crafting professional websites for institutions',
+                    '<i class="fas fa-file-alt text-blue-600"></i> Creating digital documents & profiles',
+                    '<i class="fas fa-cogs text-purple-600"></i> Developing simple digital systems'
                 ];
 
                 const autoTyper = new AutoTyper(typingElement, typingTexts, {
