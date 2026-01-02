@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - PrimeTrust Lending Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'prime-blue': '#1e40af',
+                        'prime-dark': '#1e3a8a',
+                        'prime-green': '#059669',
+                        'prime-light': '#3b82f6'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center">
+                        <div class="w-10 h-10 bg-prime-blue rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">PrimeTrust</div>
+                            <div class="text-xs text-gray-500 -mt-1">Lending Services</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">About</a>
+                    <a href="loan-products.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Loan Products</a>
+                    <a href="how-it-works.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">How It Works</a>
+                    <a href="apply.html" class="nav-link bg-prime-blue text-white px-6 py-2 rounded-lg hover:bg-prime-dark transition-colors duration-200">Apply Now</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-6 py-4 space-y-3">
+                <a href="about.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">About</a>
+                <a href="loan-products.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Loan Products</a>
+                <a href="how-it-works.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">How It Works</a>
+                <a href="apply.html" class="block bg-prime-blue text-white px-4 py-2 rounded-lg hover:bg-prime-dark transition-colors duration-200">Apply Now</a>
+                <a href="contact.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-prime-blue/5 to-prime-green/5">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8 text-center">
+            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Terms & Conditions</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Please read these terms and conditions carefully before applying for a loan with PrimeTrust Lending Services.
+            </p>
+            <div class="mt-6 text-sm text-gray-500">
+                Last updated: January 2, 2026
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms Content -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="prose prose-lg max-w-none">
+                
+                <!-- 1. Agreement -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">1. Agreement</h2>
+                    <div class="bg-gray-50 rounded-lg p-6 mb-6">
+                        <p class="text-gray-700 leading-relaxed">
+                            By applying for and accepting a loan from PrimeTrust Lending Services ("PrimeTrust", "we", "us", or "our"), 
+                            you ("borrower", "you", or "your") agree to be bound by these Terms and Conditions. This agreement 
+                            constitutes a legally binding contract between you and PrimeTrust Lending Services.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2. Loan Terms -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">2. Loan Terms</h2>
+                    
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">2.1 Interest Rate</h3>
+                    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+                        <li>All loans carry a fixed interest rate of 5% per month</li>
+                        <li>Interest is calculated on the outstanding principal balance</li>
+                        <li>No compound interest is charged</li>
+                        <li>Interest rates are subject to regulatory approval and may change for new loans</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">2.2 Repayment Terms</h3>
+                    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+                        <li>Monthly payments are due on the 1st of each month</li>
+                        <li>Repayment periods range from 1 to 6 months depending on loan type</li>
+                        <li>Emergency loans have a maximum repayment period of 3 months</li>
+                        <li>Early repayment is allowed without penalties</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">2.3 Loan Amounts</h3>
+                    <div class="bg-gray-50 rounded-lg p-6 mb-6">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Personal Loans</h4>
+                                <p class="text-gray-700">ZMW 1,000 - 50,000</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Business Loans</h4>
+                                <p class="text-gray-700">ZMW 5,000 - 100,000</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Emergency Loans</h4>
+                                <p class="text-gray-700">ZMW 500 - 20,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Eligibility Requirements -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">3. Eligibility Requirements</h2>
+                    <p class="text-gray-700 mb-4">To qualify for a loan, you must:</p>
+                    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+                        <li>Be at least 18 years of age</li>
+                        <li>Be a Zambian citizen or permanent resident</li>
+                        <li>Possess a valid National Registration Card (NRC)</li>
+                        <li>Have a verifiable source of income</li>
+                        <li>Provide adequate collateral or guarantor</li>
+                        <li>Have no outstanding defaults with other lending institutions</li>
+                        <li>Meet our creditworthiness assessment criteria</li>
+                    </ul>
+                </div>
+
+                <!-- 4. Application Process -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">4. Application Process</h2>
+                    
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">4.1 Application Submission</h3>
+                    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+                        <li>Applications must be completed in full with accurate information</li>
+                        <li>All required documents must be provided</li>
+                        <li>False or misleading information will result in automatic rejection</li>
+                        <li>We reserve the right to verify all information provided</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">4.2 Approval Process</h3>
+                    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+                        <li>Applications are reviewed within 24 hours</li>
+                        <li>We may request additional information or documentation</li>
+                        <li>Approval is subject to creditworthiness assessment</li>
+                        <li>We reserve the right to approve, reject, or modify loan terms</li>
+                    </ul>
+                </div>
+
+                <!-- 5. Collateral and Security -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">5. Collateral and Security</h2>
+                    
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">5.1 Collateral Requirements</h3>
+                    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+                        <li>All loans require adequate security in the form of collateral or guarantor</li>
+                        <li>Collateral value must be sufficient to cover the loan amount</li>
+                        <li>We reserve the right to revalue collateral during the loan term</li>
+                        <li>Collateral remains with the borrower but is legally charged to PrimeTrust</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">5.2 Guarantor Requirements</h3>
+                    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+                        <li>Guarantors must be creditworthy individuals</li>
+                        <li>Guarantors are jointly liable for loan repayment</li>
+                        <li>Guarantor consent must be obtained in writing</li>
+                        <li>We may pursue guarantors for debt recovery if necessary</li>
+                    </ul>
+                </div>
+
+                <!-- 6. Default and Recovery -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">6. Default and Recovery</h2>
+                    
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">6.1 Default Events</h3>
+                    <p class="text-gray-700 mb-4">You will be in default if:</p>
+                    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+                        <li>You fail to make any payment when due</li>
+                        <li>You provide false or misleading information</li>
+                        <li>You become insolvent or bankrupt</li>
+                        <li>You breach any other term of this agreement</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">6.2 Recovery Actions</h3>
+                    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-6">
+                        <p class="text-gray-700 leading-relaxed">
+                            <strong>Important:</strong> In case of default, we may take the following actions:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
+                            <li>Demand immediate repayment of the full outstanding amount</li>
+                            <li>Enforce security over collateral</li>
+                            <li>Pursue legal action for debt recovery</li>
+                            <li>Report default to credit reference agencies</li>
+                            <li>Engage debt collection agencies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 7. Fees and Charges -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">7. Fees and Charges</h2>
+                    
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-6 mb-6">
+                        <h3 class="text-lg font-semibold text-green-800 mb-3">No Hidden Fees Policy</h3>
+                        <p class="text-green-700 leading-relaxed">
+                            PrimeTrust operates a transparent pricing policy. Our 5% monthly interest rate is all-inclusive 
+                            with no hidden charges, processing fees, or early repayment penalties.
+                        </p>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">7.1 Applicable Charges</h3>
+                    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+                        <li>Monthly interest: 5% of outstanding principal</li>
+                        <li>Late payment fee: ZMW 50 per missed payment (after 7-day grace period)</li>
+                        <li>Legal fees: Actual costs incurred in debt recovery (if applicable)</li>
+                        <li>Valuation fees: Actual costs for collateral valuation (if required)</li>
+                    </ul>
+                </div>
+
+                <!-- 8. Privacy and Data Protection -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">8. Privacy and Data Protection</h2>
+                    
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">8.1 Information Collection</h3>
+                    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+                        <li>We collect personal and financial information for loan assessment</li>
+                        <li>Information is used solely for lending purposes</li>
+                        <li>We may share information with credit reference agencies</li>
+                        <li>Your information is protected in accordance with Zambian data protection laws</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">8.2 Information Security</h3>
+                    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+                        <li>We maintain strict security measures to protect your information</li>
+                        <li>Access to information is limited to authorized personnel only</li>
+                        <li>We do not sell or share information with third parties for marketing purposes</li>
+                        <li>You have the right to access and correct your personal information</li>
+                    </ul>
+                </div>
+
+                <!-- 9. Regulatory Compliance -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">9. Regulatory Compliance</h2>
+                    
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
+                        <h3 class="text-lg font-semibold text-blue-800 mb-3">Licensed Institution</h3>
+                        <p class="text-blue-700 leading-relaxed">
+                            PrimeTrust Lending Services is licensed and regulated by the Bank of Zambia. 
+                            We operate in full compliance with all applicable laws and regulations governing 
+                            micro-lending institutions in Zambia.
+                        </p>
+                    </div>
+
+                    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+                        <li>Licensed under the Banking and Financial Services Act</li>
+                        <li>Compliant with Consumer Protection Guidelines</li>
+                        <li>Adherent to Fair Lending Practices</li>
+                        <li>Subject to regular regulatory supervision</li>
+                    </ul>
+                </div>
+
+                <!-- 10. Governing Law -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">10. Governing Law</h2>
+                    
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <p class="text-gray-700 leading-relaxed">
+                            These Terms and Conditions are governed by the laws of the Republic of Zambia. 
+                            Any disputes arising from this agreement shall be subject to the exclusive 
+                            jurisdiction of the Zambian courts.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 11. Contact Information -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">11. Contact Information</h2>
+                    
+                    <div class="bg-prime-blue/5 rounded-lg p-6">
+                        <p class="text-gray-700 mb-4">
+                            For questions about these Terms and Conditions or our lending services, please contact us:
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Office Address</h4>
+                                <p class="text-gray-700">
+                                    Plot 123, Independence Avenue<br>
+                                    Lusaka, Zambia
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Contact Details</h4>
+                                <p class="text-gray-700">
+                                    Phone: +260 211 123 456<br>
+                                    Email: info@primetrust.zm
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Acknowledgment -->
+                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                    <h3 class="text-lg font-semibold text-yellow-800 mb-3">Acknowledgment</h3>
+                    <p class="text-yellow-700 leading-relaxed">
+                        By applying for a loan with PrimeTrust Lending Services, you acknowledge that you have 
+                        read, understood, and agree to be bound by these Terms and Conditions. If you do not 
+                        agree with any part of these terms, please do not proceed with your loan application.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                Ready to Apply?
+            </h2>
+            
+            <p class="text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl mx-auto">
+                Now that you've reviewed our terms and conditions, you can proceed with your loan application 
+                with confidence in our transparent and fair lending practices.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="apply.html" class="inline-flex items-center justify-center px-8 py-4 bg-prime-blue text-white font-semibold rounded-lg hover:bg-prime-dark transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl">
+                    Apply for Loan
+                </a>
+                <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 text-gray-700 font-semibold hover:text-prime-blue transition-colors duration-200">
+                    Have Questions? Contact Us
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="bg-prime-blue hover:bg-prime-dark text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 opacity-0 translate-y-4" onclick="scrollToTop()">
+            <i class="fas fa-arrow-up text-lg"></i>
+        </button>
+        
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/260776082004" target="_blank" class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-prime-blue rounded-lg flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">PrimeTrust Lending Services</h3>
+                            <p class="text-sm text-gray-400">Fast. Secure. Reliable.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Your trusted partner for short-term lending solutions in Zambia. We provide transparent, fast, and reliable financial services to individuals and small businesses.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors duration-200">About Us</a></li>
+                        <li><a href="loan-products.html" class="text-gray-400 hover:text-white transition-colors duration-200">Loan Products</a></li>
+                        <li><a href="how-it-works.html" class="text-gray-400 hover:text-white transition-colors duration-200">How It Works</a></li>
+                        <li><a href="apply.html" class="text-gray-400 hover:text-white transition-colors duration-200">Apply Now</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-200">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            Plot 123, Independence Ave, Lusaka
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone mr-3"></i>
+                            +260 211 123 456
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope mr-3"></i>
+                            info@primetrust.zm
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center">
+                <p class="text-gray-400">&copy; 2026 PrimeTrust Lending Services. All rights reserved. | Licensed by Bank of Zambia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // DOM Content Loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+
+        // Back to Top functionality
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'translate-y-4');
+                backToTopBtn.classList.add('opacity-100', 'translate-y-0');
+            } else {
+                backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+                backToTopBtn.classList.add('opacity-0', 'translate-y-4');
+            }
+        });
+
+        window.scrollToTop = scrollToTop;
+    </script>
+</body>
+</html>

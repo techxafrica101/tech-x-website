@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Loan - PrimeTrust Lending Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'prime-blue': '#1e40af',
+                        'prime-dark': '#1e3a8a',
+                        'prime-green': '#059669',
+                        'prime-light': '#3b82f6'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center">
+                        <div class="w-10 h-10 bg-prime-blue rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">PrimeTrust</div>
+                            <div class="text-xs text-gray-500 -mt-1">Lending Services</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">About</a>
+                    <a href="loan-products.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Loan Products</a>
+                    <a href="how-it-works.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">How It Works</a>
+                    <a href="apply.html" class="nav-link bg-prime-blue text-white px-6 py-2 rounded-lg hover:bg-prime-dark transition-colors duration-200">Apply Now</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-6 py-4 space-y-3">
+                <a href="about.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">About</a>
+                <a href="loan-products.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Loan Products</a>
+                <a href="how-it-works.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">How It Works</a>
+                <a href="apply.html" class="block bg-prime-blue text-white px-4 py-2 rounded-lg hover:bg-prime-dark transition-colors duration-200">Apply Now</a>
+                <a href="contact.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-prime-blue/5 to-prime-green/5">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8 text-center">
+            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Apply for a Loan</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Complete our simple application form and get approved within 24 hours.
+            </p>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-xl p-8 lg:p-12">
+                <!-- Progress Indicator -->
+                <div class="mb-12">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-prime-blue text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
+                            <span class="ml-3 text-sm font-medium text-prime-blue">Personal Information</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center text-sm font-bold">2</div>
+                            <span class="ml-3 text-sm font-medium text-gray-500">Loan Details</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center text-sm font-bold">3</div>
+                            <span class="ml-3 text-sm font-medium text-gray-500">Review & Submit</span>
+                        </div>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-prime-blue h-2 rounded-full transition-all duration-300" style="width: 33%"></div>
+                    </div>
+                </div>
+
+                <!-- Success Message (Hidden by default) -->
+                <div id="success-message" class="hidden bg-green-50 border border-green-200 text-green-700 px-6 py-4 rounded-lg mb-8">
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-semibold">Application Submitted Successfully!</h3>
+                            <p class="text-sm mt-1">We'll review your application and contact you within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Error Message (Hidden by default) -->
+                <div id="error-message" class="hidden bg-red-50 border border-red-200 text-red-700 px-6 py-4 rounded-lg mb-8">
+                    <div class="flex items-center">
+                        <i class="fas fa-exclamation-circle text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-semibold">Application Error</h3>
+                            <p class="text-sm mt-1">Please check your information and try again.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Application Form -->
+                <form id="loan-application-form" action="https://formspree.io/f/mdkqjwvq" method="POST">
+                    <!-- Step 1: Personal Information -->
+                    <div id="step-1" class="form-step">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-8">Personal Information</h2>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="full-name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                                <input type="text" id="full-name" name="full_name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prime-blue focus:border-transparent transition-colors duration-300" required>
+                                <div class="text-red-500 text-sm mt-1 hidden" id="full-name-error">Please enter your full name</div>
+                            </div>
+                            
+                            <div>
+                                <label for="nrc" class="block text-sm font-medium text-gray-700 mb-2">National Registration Card (NRC) *</label>
+                                <input type="text" id="nrc" name="nrc" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prime-blue focus:border-transparent transition-colors duration-300" required>
+                                <div class="text-red-500 text-sm mt-1 hidden" id="nrc-error">Please enter your NRC number</div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prime-blue focus:border-transparent transition-colors duration-300" required>
+                                <div class="text-red-500 text-sm mt-1 hidden" id="phone-error">Please enter your phone number</div>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prime-blue focus:border-transparent transition-colors duration-300">
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="address" class="block text-sm font-medium text-gray-700 mb-2">Residential Address *</label>
+                            <textarea id="address" name="address" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prime-blue focus:border-transparent transition-colors duration-300" required></textarea>
+                            <div class="text-red-500 text-sm mt-1 hidden" id="address-error">Please enter your address</div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div>
+                                <label for="employment-status" class="block text-sm font-medium text-gray-700 mb-2">Employment Status *</label>
+                                <select id="employment-status" name="employment_status" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prime-blue focus:border-transparent transition-colors duration-300" required>
+                                    <option value="">Select employment status</option>
+                                    <option value="employed">Employed</option>
+                                    <option value="self-employed">Self-Employed</option>
+                                    <option value="business-owner">Business Owner</option>
+                                    <option value="unemployed">Unemployed</option>
+                                </select>
+                                <div class="text-red-500 text-sm mt-1 hidden" id="employment-status-error">Please select your employment status</div>
+                            </div>
+                            
+                            <div>
+                                <label for="monthly-income" class="block text-sm font-medium text-gray-700 mb-2">Monthly Income (ZMW) *</label>
+                                <input type="number" id="monthly-income" name="monthly_income" min="0" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prime-blue focus:border-transparent transition-colors duration-300" required>
+                                <div class="text-red-500 text-sm mt-1 hidden" id="monthly-income-error">Please enter your monthly income</div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end">
+                            <button type="button" onclick="nextStep()" class="bg-prime-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-prime-dark transition-colors duration-200">
+                                Next Step
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Loan Details -->
+                    <div id="step-2" class="form-step hidden">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-8">Loan Details</h2>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="loan-type" class="block text-sm font-medium text-gray-700 mb-2">Loan Type *</label>
+                                <select id="loan-type" name="loan_type" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prime-blue focus:border-transparent transition-colors duration-300" required onchange="updateLoanLimits()">
+                                    <option value="">Select loan type</option>
+                                    <option value="personal">Personal Loan</option>
+                                    <option value="business">Business Loan</option>
+                                    <option value="emergency">Emergency Loan</option>
+                                </select>
+                                <div class="text-red-500 text-sm mt-1 hidden" id="loan-type-error">Please select a loan type</div>
+                            </div>
+                            
+                            <div>
+                                <label for="loan-amount" class="block text-sm font-medium text-gray-700 mb-2">Loan Amount (ZMW) *</label>
+                                <input type="number" id="loan-amount" name="loan_amount" min="500" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prime-blue focus:border-transparent transition-colors duration-300" required>
+                                <div class="text-sm text-gray-500 mt-1" id="loan-amount-hint">Select loan type to see limits</div>
+                                <div class="text-red-500 text-sm mt-1 hidden" id="loan-amount-error">Please enter a valid loan amount</div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="repayment-period" class="block text-sm font-medium text-gray-700 mb-2">Repayment Period *</label>
+                                <select id="repayment-period" name="repayment_period" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prime-blue focus:border-transparent transition-colors duration-300" required>
+                                    <option value="">Select repayment period</option>
+                                    <option value="1">1 month</option>
+                                    <option value="2">2 months</option>
+                                    <option value="3">3 months</option>
+                                    <option value="4">4 months</option>
+                                    <option value="5">5 months</option>
+                                    <option value="6">6 months</option>
+                                </select>
+                                <div class="text-red-500 text-sm mt-1 hidden" id="repayment-period-error">Please select repayment period</div>
+                            </div>
+                            
+                            <div>
+                                <label for="purpose" class="block text-sm font-medium text-gray-700 mb-2">Purpose of Loan *</label>
+                                <select id="purpose" name="purpose" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prime-blue focus:border-transparent transition-colors duration-300" required>
+                                    <option value="">Select purpose</option>
+                                    <option value="business-expansion">Business Expansion</option>
+                                    <option value="education">Education</option>
+                                    <option value="medical">Medical Emergency</option>
+                                    <option value="home-improvement">Home Improvement</option>
+                                    <option value="debt-consolidation">Debt Consolidation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="text-red-500 text-sm mt-1 hidden" id="purpose-error">Please select loan purpose</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="collateral-type" class="block text-sm font-medium text-gray-700 mb-2">Surety/Collateral Type *</label>
+                            <select id="collateral-type" name="collateral_type" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prime-blue focus:border-transparent transition-colors duration-300" required>
+                                <option value="">Select surety/collateral type</option>
+                                <option value="guarantor">Guarantor</option>
+                                <option value="property">Property</option>
+                                <option value="vehicle">Vehicle</option>
+                                <option value="salary">Salary Assignment</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="text-red-500 text-sm mt-1 hidden" id="collateral-type-error">Please select collateral type</div>
+                        </div>
+
+                        <!-- Loan Summary -->
+                        <div class="bg-gray-50 rounded-lg p-6 mb-8">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-4">Loan Summary</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div>
+                                    <div class="text-sm text-gray-600">Monthly Interest Rate</div>
+                                    <div class="text-xl font-bold text-prime-blue">5%</div>
+                                </div>
+                                <div>
+                                    <div class="text-sm text-gray-600">Monthly Payment</div>
+                                    <div class="text-xl font-bold text-gray-900" id="monthly-payment">ZMW 0</div>
+                                </div>
+                                <div>
+                                    <div class="text-sm text-gray-600">Total Repayment</div>
+                                    <div class="text-xl font-bold text-gray-900" id="total-repayment">ZMW 0</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <button type="button" onclick="prevStep()" class="bg-gray-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-600 transition-colors duration-200">
+                                <i class="fas fa-arrow-left mr-2"></i>
+                                Previous
+                            </button>
+                            <button type="button" onclick="nextStep()" class="bg-prime-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-prime-dark transition-colors duration-200">
+                                Next Step
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Review & Submit -->
+                    <div id="step-3" class="form-step hidden">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-8">Review & Submit</h2>
+                        
+                        <!-- Application Summary -->
+                        <div class="bg-gray-50 rounded-lg p-6 mb-8">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-6">Application Summary</h3>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-3">Personal Information</h4>
+                                    <div class="space-y-2 text-sm">
+                                        <div><span class="text-gray-600">Name:</span> <span id="summary-name"></span></div>
+                                        <div><span class="text-gray-600">NRC:</span> <span id="summary-nrc"></span></div>
+                                        <div><span class="text-gray-600">Phone:</span> <span id="summary-phone"></span></div>
+                                        <div><span class="text-gray-600">Employment:</span> <span id="summary-employment"></span></div>
+                                        <div><span class="text-gray-600">Monthly Income:</span> ZMW <span id="summary-income"></span></div>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-3">Loan Details</h4>
+                                    <div class="space-y-2 text-sm">
+                                        <div><span class="text-gray-600">Loan Type:</span> <span id="summary-loan-type"></span></div>
+                                        <div><span class="text-gray-600">Amount:</span> ZMW <span id="summary-amount"></span></div>
+                                        <div><span class="text-gray-600">Repayment Period:</span> <span id="summary-period"></span> months</div>
+                                        <div><span class="text-gray-600">Purpose:</span> <span id="summary-purpose"></span></div>
+                                        <div><span class="text-gray-600">Collateral:</span> <span id="summary-collateral"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Terms and Conditions -->
+                        <div class="mb-8">
+                            <div class="flex items-start">
+                                <input type="checkbox" id="terms-agreement" name="terms_agreement" class="mt-1 mr-3" required>
+                                <label for="terms-agreement" class="text-sm text-gray-600">
+                                    I agree to the <a href="terms.html" target="_blank" class="text-prime-blue hover:underline">Terms and Conditions</a> 
+                                    and confirm that all information provided is accurate and complete. I understand that providing false 
+                                    information may result in rejection of my application.
+                                </label>
+                            </div>
+                            <div class="text-red-500 text-sm mt-1 hidden" id="terms-error">Please accept the terms and conditions</div>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <button type="button" onclick="prevStep()" class="bg-gray-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-600 transition-colors duration-200">
+                                <i class="fas fa-arrow-left mr-2"></i>
+                                Previous
+                            </button>
+                            <button type="submit" id="submit-btn" class="bg-prime-green text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors duration-200">
+                                <span id="submit-text">Submit Application</span>
+                                <i id="submit-spinner" class="fas fa-spinner fa-spin ml-2 hidden"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="bg-prime-blue hover:bg-prime-dark text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 opacity-0 translate-y-4" onclick="scrollToTop()">
+            <i class="fas fa-arrow-up text-lg"></i>
+        </button>
+        
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/260776082004" target="_blank" class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-prime-blue rounded-lg flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">PrimeTrust Lending Services</h3>
+                            <p class="text-sm text-gray-400">Fast. Secure. Reliable.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Your trusted partner for short-term lending solutions in Zambia. We provide transparent, fast, and reliable financial services to individuals and small businesses.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors duration-200">About Us</a></li>
+                        <li><a href="loan-products.html" class="text-gray-400 hover:text-white transition-colors duration-200">Loan Products</a></li>
+                        <li><a href="how-it-works.html" class="text-gray-400 hover:text-white transition-colors duration-200">How It Works</a></li>
+                        <li><a href="apply.html" class="text-gray-400 hover:text-white transition-colors duration-200">Apply Now</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-200">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            Plot 123, Independence Ave, Lusaka
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone mr-3"></i>
+                            +260 211 123 456
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope mr-3"></i>
+                            info@primetrust.zm
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center">
+                <p class="text-gray-400">&copy; 2026 PrimeTrust Lending Services. All rights reserved. | Licensed by Bank of Zambia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        let currentStep = 1;
+        const totalSteps = 3;
+
+        // DOM Content Loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Add event listeners for loan calculation
+            document.getElementById('loan-amount').addEventListener('input', calculateLoan);
+            document.getElementById('repayment-period').addEventListener('change', calculateLoan);
+        });
+
+        // Step Navigation Functions
+        function nextStep() {
+            if (validateCurrentStep()) {
+                if (currentStep < totalSteps) {
+                    document.getElementById(`step-${currentStep}`).classList.add('hidden');
+                    currentStep++;
+                    document.getElementById(`step-${currentStep}`).classList.remove('hidden');
+                    updateProgressBar();
+                    
+                    if (currentStep === 3) {
+                        updateSummary();
+                    }
+                }
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 1) {
+                document.getElementById(`step-${currentStep}`).classList.add('hidden');
+                currentStep--;
+                document.getElementById(`step-${currentStep}`).classList.remove('hidden');
+                updateProgressBar();
+            }
+        }
+
+        function updateProgressBar() {
+            const progress = (currentStep / totalSteps) * 100;
+            document.querySelector('.bg-prime-blue.h-2').style.width = `${progress}%`;
+            
+            // Update step indicators
+            for (let i = 1; i <= totalSteps; i++) {
+                const stepIndicator = document.querySelector(`.flex:nth-child(${i}) .w-8`);
+                if (i <= currentStep) {
+                    stepIndicator.classList.remove('bg-gray-200', 'text-gray-500');
+                    stepIndicator.classList.add('bg-prime-blue', 'text-white');
+                    stepIndicator.nextElementSibling.classList.remove('text-gray-500');
+                    stepIndicator.nextElementSibling.classList.add('text-prime-blue');
+                } else {
+                    stepIndicator.classList.remove('bg-prime-blue', 'text-white');
+                    stepIndicator.classList.add('bg-gray-200', 'text-gray-500');
+                    stepIndicator.nextElementSibling.classList.remove('text-prime-blue');
+                    stepIndicator.nextElementSibling.classList.add('text-gray-500');
+                }
+            }
+        }
+
+        // Validation Functions
+        function validateCurrentStep() {
+            let isValid = true;
+            
+            if (currentStep === 1) {
+                // Validate personal information
+                const requiredFields = ['full-name', 'nrc', 'phone', 'address', 'employment-status', 'monthly-income'];
+                requiredFields.forEach(fieldId => {
+                    const field = document.getElementById(fieldId);
+                    const errorDiv = document.getElementById(`${fieldId}-error`);
+                    
+                    if (!field.value.trim()) {
+                        errorDiv.classList.remove('hidden');
+                        isValid = false;
+                    } else {
+                        errorDiv.classList.add('hidden');
+                    }
+                });
+            } else if (currentStep === 2) {
+                // Validate loan details
+                const requiredFields = ['loan-type', 'loan-amount', 'repayment-period', 'purpose', 'collateral-type'];
+                requiredFields.forEach(fieldId => {
+                    const field = document.getElementById(fieldId);
+                    const errorDiv = document.getElementById(`${fieldId}-error`);
+                    
+                    if (!field.value.trim()) {
+                        errorDiv.classList.remove('hidden');
+                        isValid = false;
+                    } else {
+                        errorDiv.classList.add('hidden');
+                    }
+                });
+                
+                // Validate loan amount limits
+                const loanType = document.getElementById('loan-type').value;
+                const loanAmount = parseInt(document.getElementById('loan-amount').value);
+                const amountError = document.getElementById('loan-amount-error');
+                
+                if (loanType && loanAmount) {
+                    let minAmount, maxAmount;
+                    switch (loanType) {
+                        case 'personal':
+                            minAmount = 1000;
+                            maxAmount = 50000;
+                            break;
+                        case 'business':
+                            minAmount = 5000;
+                            maxAmount = 100000;
+                            break;
+                        case 'emergency':
+                            minAmount = 500;
+                            maxAmount = 20000;
+                            break;
+                    }
+                    
+                    if (loanAmount < minAmount || loanAmount > maxAmount) {
+                        amountError.textContent = `Amount must be between ZMW ${minAmount.toLocaleString()} and ZMW ${maxAmount.toLocaleString()}`;
+                        amountError.classList.remove('hidden');
+                        isValid = false;
+                    } else {
+                        amountError.classList.add('hidden');
+                    }
+                }
+            }
+            
+            return isValid;
+        }
+
+        // Update loan amount limits based on loan type
+        function updateLoanLimits() {
+            const loanType = document.getElementById('loan-type').value;
+            const loanAmountField = document.getElementById('loan-amount');
+            const hintDiv = document.getElementById('loan-amount-hint');
+            
+            let minAmount, maxAmount, hint;
+            
+            switch (loanType) {
+                case 'personal':
+                    minAmount = 1000;
+                    maxAmount = 50000;
+                    hint = 'Personal loans: ZMW 1,000 - 50,000';
+                    break;
+                case 'business':
+                    minAmount = 5000;
+                    maxAmount = 100000;
+                    hint = 'Business loans: ZMW 5,000 - 100,000';
+                    break;
+                case 'emergency':
+                    minAmount = 500;
+                    maxAmount = 20000;
+                    hint = 'Emergency loans: ZMW 500 - 20,000';
+                    break;
+                default:
+                    hint = 'Select loan type to see limits';
+                    minAmount = 500;
+                    maxAmount = 100000;
+            }
+            
+            loanAmountField.min = minAmount;
+            loanAmountField.max = maxAmount;
+            hintDiv.textContent = hint;
+            
+            calculateLoan();
+        }
+
+        // Calculate loan payments
+        function calculateLoan() {
+            const loanAmount = parseFloat(document.getElementById('loan-amount').value) || 0;
+            const repaymentPeriod = parseInt(document.getElementById('repayment-period').value) || 1;
+            const monthlyInterestRate = 0.05; // 5% per month
+            
+            if (loanAmount > 0) {
+                const monthlyInterest = loanAmount * monthlyInterestRate;
+                const monthlyPrincipal = loanAmount / repaymentPeriod;
+                const monthlyPayment = monthlyPrincipal + monthlyInterest;
+                const totalRepayment = monthlyPayment * repaymentPeriod;
+                
+                document.getElementById('monthly-payment').textContent = `ZMW ${monthlyPayment.toLocaleString()}`;
+                document.getElementById('total-repayment').textContent = `ZMW ${totalRepayment.toLocaleString()}`;
+            } else {
+                document.getElementById('monthly-payment').textContent = 'ZMW 0';
+                document.getElementById('total-repayment').textContent = 'ZMW 0';
+            }
+        }
+
+        // Update summary in step 3
+        function updateSummary() {
+            document.getElementById('summary-name').textContent = document.getElementById('full-name').value;
+            document.getElementById('summary-nrc').textContent = document.getElementById('nrc').value;
+            document.getElementById('summary-phone').textContent = document.getElementById('phone').value;
+            document.getElementById('summary-employment').textContent = document.getElementById('employment-status').value;
+            document.getElementById('summary-income').textContent = document.getElementById('monthly-income').value;
+            
+            document.getElementById('summary-loan-type').textContent = document.getElementById('loan-type').value;
+            document.getElementById('summary-amount').textContent = document.getElementById('loan-amount').value;
+            document.getElementById('summary-period').textContent = document.getElementById('repayment-period').value;
+            document.getElementById('summary-purpose').textContent = document.getElementById('purpose').value;
+            document.getElementById('summary-collateral').textContent = document.getElementById('collateral-type').value;
+        }
+
+        // Form submission
+        document.getElementById('loan-application-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Validate terms agreement
+            const termsCheckbox = document.getElementById('terms-agreement');
+            const termsError = document.getElementById('terms-error');
+            
+            if (!termsCheckbox.checked) {
+                termsError.classList.remove('hidden');
+                return;
+            } else {
+                termsError.classList.add('hidden');
+            }
+            
+            // Hide previous messages
+            document.getElementById('success-message').classList.add('hidden');
+            document.getElementById('error-message').classList.add('hidden');
+            
+            // Show loading state
+            const submitBtn = document.getElementById('submit-btn');
+            const submitText = document.getElementById('submit-text');
+            const submitSpinner = document.getElementById('submit-spinner');
+            
+            submitBtn.disabled = true;
+            submitText.textContent = 'Submitting...';
+            submitSpinner.classList.remove('hidden');
+            
+            try {
+                // Submit to Formspree
+                const formData = new FormData(this);
+                const response = await fetch(this.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    // Success
+                    document.getElementById('success-message').classList.remove('hidden');
+                    this.reset();
+                    currentStep = 1;
+                    document.getElementById('step-3').classList.add('hidden');
+                    document.getElementById('step-1').classList.remove('hidden');
+                    updateProgressBar();
+                    // Scroll to success message
+                    document.getElementById('success-message').scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
+                    // Error
+                    document.getElementById('error-message').classList.remove('hidden');
+                }
+            } catch (error) {
+                // Network error
+                document.getElementById('error-message').classList.remove('hidden');
+            } finally {
+                // Reset button state
+                submitBtn.disabled = false;
+                submitText.textContent = 'Submit Application';
+                submitSpinner.classList.add('hidden');
+            }
+        });
+
+        // Back to Top functionality
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'translate-y-4');
+                backToTopBtn.classList.add('opacity-100', 'translate-y-0');
+            } else {
+                backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+                backToTopBtn.classList.add('opacity-0', 'translate-y-4');
+            }
+        });
+
+        window.scrollToTop = scrollToTop;
+    </script>
+</body>
+</html>

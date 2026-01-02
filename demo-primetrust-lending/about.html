@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - PrimeTrust Lending Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'prime-blue': '#1e40af',
+                        'prime-dark': '#1e3a8a',
+                        'prime-green': '#059669',
+                        'prime-light': '#3b82f6'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center">
+                        <div class="w-10 h-10 bg-prime-blue rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">PrimeTrust</div>
+                            <div class="text-xs text-gray-500 -mt-1">Lending Services</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="about.html" class="nav-link text-prime-blue font-medium transition-colors duration-200 relative">About</a>
+                    <a href="loan-products.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Loan Products</a>
+                    <a href="how-it-works.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">How It Works</a>
+                    <a href="apply.html" class="nav-link bg-prime-blue text-white px-6 py-2 rounded-lg hover:bg-prime-dark transition-colors duration-200">Apply Now</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-6 py-4 space-y-3">
+                <a href="about.html" class="block text-prime-blue font-medium transition-colors duration-200">About</a>
+                <a href="loan-products.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Loan Products</a>
+                <a href="how-it-works.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">How It Works</a>
+                <a href="apply.html" class="block bg-prime-blue text-white px-4 py-2 rounded-lg hover:bg-prime-dark transition-colors duration-200">Apply Now</a>
+                <a href="contact.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-prime-blue/5 to-prime-green/5">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8 text-center">
+            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">About PrimeTrust</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Your trusted partner for reliable, transparent, and fast lending solutions in Zambia.
+            </p>
+        </div>
+    </section>
+
+    <!-- Company Overview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div class="company-content opacity-0 translate-y-4 transition-all duration-700">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Who We Are</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        PrimeTrust Lending Services is a registered micro-lending institution based in Zambia, 
+                        dedicated to providing accessible financial solutions to individuals and small businesses 
+                        across the country.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                        Since our establishment, we have been committed to bridging the gap between traditional 
+                        banking and the financial needs of everyday Zambians. Our focus on transparency, speed, 
+                        and customer service has made us a trusted name in the lending industry.
+                    </p>
+                    
+                    <!-- Key Stats -->
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-prime-blue">5+</div>
+                            <div class="text-sm text-gray-600">Years Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-prime-green">10K+</div>
+                            <div class="text-sm text-gray-600">Happy Customers</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-gray-900">99%</div>
+                            <div class="text-sm text-gray-600">Approval Rate</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Visual -->
+                <div class="company-visual opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="bg-gradient-to-br from-prime-blue/10 to-prime-green/10 rounded-2xl p-8">
+                        <div class="bg-white rounded-xl p-8 shadow-lg">
+                            <div class="text-center mb-6">
+                                <div class="w-20 h-20 bg-prime-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-shield-alt text-white text-3xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900">Licensed & Regulated</h3>
+                            </div>
+                            <p class="text-gray-600 text-center leading-relaxed">
+                                Fully licensed by the Bank of Zambia and operating under strict regulatory 
+                                compliance to ensure your financial security and peace of mind.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Mission & Vision</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Driving financial inclusion and empowerment across Zambia through accessible lending solutions.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Mission -->
+                <div class="mission-card bg-white rounded-2xl p-8 shadow-lg opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-prime-blue/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-bullseye text-prime-blue text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        To provide fast, transparent, and reliable lending services that empower individuals 
+                        and small businesses to achieve their financial goals and contribute to Zambia's 
+                        economic growth.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <div class="w-2 h-2 bg-prime-blue rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                            <span class="text-gray-600">Accessible financial services for all</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-2 h-2 bg-prime-blue rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                            <span class="text-gray-600">Transparent and fair lending practices</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-2 h-2 bg-prime-blue rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                            <span class="text-gray-600">Supporting economic empowerment</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Vision -->
+                <div class="vision-card bg-white rounded-2xl p-8 shadow-lg opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-prime-green/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-eye text-prime-green text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Our Vision</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        To become Zambia's most trusted micro-lending institution, known for our integrity, 
+                        innovation, and commitment to customer success, while contributing to financial 
+                        inclusion across the nation.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <div class="w-2 h-2 bg-prime-green rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                            <span class="text-gray-600">Leading micro-lending institution</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-2 h-2 bg-prime-green rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                            <span class="text-gray-600">Innovation in financial services</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-2 h-2 bg-prime-green rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                            <span class="text-gray-600">National financial inclusion</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Core Values</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    The principles that guide everything we do and shape our relationships with customers.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Integrity -->
+                <div class="value-card text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-20 h-20 bg-prime-blue/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-prime-blue text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Integrity</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We conduct our business with the highest ethical standards, ensuring honesty and 
+                        transparency in all our dealings with customers and stakeholders.
+                    </p>
+                </div>
+
+                <!-- Transparency -->
+                <div class="value-card text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-20 h-20 bg-prime-green/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-eye text-prime-green text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Transparency</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Clear communication and full disclosure of all terms and conditions. No hidden fees, 
+                        no surprises - just honest, straightforward lending practices.
+                    </p>
+                </div>
+
+                <!-- Speed -->
+                <div class="value-card text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-bolt text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Speed</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We understand that financial needs are often urgent. Our streamlined processes 
+                        ensure quick approval and disbursement without compromising on quality.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance Statement -->
+    <section class="py-20 bg-prime-blue">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <div class="text-white">
+                <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-8">
+                    <i class="fas fa-certificate text-white text-3xl"></i>
+                </div>
+                
+                <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+                    Regulatory Compliance
+                </h2>
+                
+                <p class="text-xl text-blue-100 leading-relaxed mb-8 max-w-3xl mx-auto">
+                    PrimeTrust Lending Services is fully licensed and regulated by the Bank of Zambia. 
+                    We operate in strict compliance with all applicable laws and regulations governing 
+                    micro-lending institutions in Zambia.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div class="bg-white/10 rounded-lg p-6">
+                        <i class="fas fa-shield-alt text-2xl mb-3"></i>
+                        <div class="font-semibold">Licensed Institution</div>
+                        <div class="text-sm text-blue-100">Bank of Zambia Approved</div>
+                    </div>
+                    <div class="bg-white/10 rounded-lg p-6">
+                        <i class="fas fa-lock text-2xl mb-3"></i>
+                        <div class="font-semibold">Data Protection</div>
+                        <div class="text-sm text-blue-100">Customer Privacy Secured</div>
+                    </div>
+                    <div class="bg-white/10 rounded-lg p-6">
+                        <i class="fas fa-balance-scale text-2xl mb-3"></i>
+                        <div class="font-semibold">Fair Practices</div>
+                        <div class="text-sm text-blue-100">Ethical Lending Standards</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                Ready to Experience the PrimeTrust Difference?
+            </h2>
+            
+            <p class="text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl mx-auto">
+                Join thousands of satisfied customers who trust us for their lending needs. 
+                Apply today and experience fast, transparent, and reliable service.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="apply.html" class="inline-flex items-center justify-center px-8 py-4 bg-prime-blue text-white font-semibold rounded-lg hover:bg-prime-dark transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl">
+                    Apply for Loan
+                </a>
+                <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 text-gray-700 font-semibold hover:text-prime-blue transition-colors duration-200">
+                    Contact Us
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="bg-prime-blue hover:bg-prime-dark text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 opacity-0 translate-y-4" onclick="scrollToTop()">
+            <i class="fas fa-arrow-up text-lg"></i>
+        </button>
+        
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/260776082004" target="_blank" class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-prime-blue rounded-lg flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">PrimeTrust Lending Services</h3>
+                            <p class="text-sm text-gray-400">Fast. Secure. Reliable.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Your trusted partner for short-term lending solutions in Zambia. We provide transparent, fast, and reliable financial services to individuals and small businesses.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors duration-200">About Us</a></li>
+                        <li><a href="loan-products.html" class="text-gray-400 hover:text-white transition-colors duration-200">Loan Products</a></li>
+                        <li><a href="how-it-works.html" class="text-gray-400 hover:text-white transition-colors duration-200">How It Works</a></li>
+                        <li><a href="apply.html" class="text-gray-400 hover:text-white transition-colors duration-200">Apply Now</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-200">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            Plot 123, Independence Ave, Lusaka
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone mr-3"></i>
+                            +260 211 123 456
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope mr-3"></i>
+                            info@primetrust.zm
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center">
+                <p class="text-gray-400">&copy; 2026 PrimeTrust Lending Services. All rights reserved. | Licensed by Bank of Zambia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // DOM Content Loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Scroll-based section reveals
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animated elements
+            document.querySelectorAll('.company-content, .company-visual, .mission-card, .vision-card, .value-card').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Add animate class for scroll animations
+            const style = document.createElement('style');
+            style.textContent = `
+                .company-content.animate,
+                .company-visual.animate,
+                .mission-card.animate,
+                .vision-card.animate,
+                .value-card.animate {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            `;
+            document.head.appendChild(style);
+
+            // Staggered animations
+            const valueCards = document.querySelectorAll('.value-card');
+            valueCards.forEach((card, index) => {
+                card.style.transitionDelay = `${index * 100}ms`;
+            });
+        });
+
+        // Back to Top functionality
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'translate-y-4');
+                backToTopBtn.classList.add('opacity-100', 'translate-y-0');
+            } else {
+                backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+                backToTopBtn.classList.add('opacity-0', 'translate-y-4');
+            }
+        });
+
+        window.scrollToTop = scrollToTop;
+    </script>
+</body>
+</html>

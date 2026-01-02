@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PrimeTrust Lending Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'prime-blue': '#1e40af',
+                        'prime-dark': '#1e3a8a',
+                        'prime-green': '#059669',
+                        'prime-light': '#3b82f6'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center">
+                        <div class="w-10 h-10 bg-prime-blue rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">PrimeTrust</div>
+                            <div class="text-xs text-gray-500 -mt-1">Lending Services</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">About</a>
+                    <a href="loan-products.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Loan Products</a>
+                    <a href="how-it-works.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">How It Works</a>
+                    <a href="apply.html" class="nav-link bg-prime-blue text-white px-6 py-2 rounded-lg hover:bg-prime-dark transition-colors duration-200">Apply Now</a>
+                    <a href="contact.html" class="nav-link text-prime-blue font-medium transition-colors duration-200 relative">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-6 py-4 space-y-3">
+                <a href="about.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">About</a>
+                <a href="loan-products.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">Loan Products</a>
+                <a href="how-it-works.html" class="block text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">How It Works</a>
+                <a href="apply.html" class="block bg-prime-blue text-white px-4 py-2 rounded-lg hover:bg-prime-dark transition-colors duration-200">Apply Now</a>
+                <a href="contact.html" class="block text-prime-blue font-medium transition-colors duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-prime-blue/5 to-prime-green/5">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8 text-center">
+            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Contact Us</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Get in touch with our team for any questions about our lending services or to discuss your financial needs.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div class="contact-info opacity-0 translate-y-4 transition-all duration-700">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8">Get In Touch</h2>
+                    
+                    <div class="space-y-8">
+                        <!-- Office Address -->
+                        <div class="flex items-start">
+                            <div class="w-14 h-14 bg-prime-blue/10 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-prime-blue text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Office Address</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Plot 123, Independence Avenue<br>
+                                    Lusaka, Zambia<br>
+                                    10101
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-start">
+                            <div class="w-14 h-14 bg-prime-green/10 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
+                                <i class="fas fa-phone text-prime-green text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Phone</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    <a href="tel:+260211123456" class="hover:text-prime-blue transition-colors duration-200">
+                                        +260 211 123 456
+                                    </a><br>
+                                    <span class="text-sm text-gray-500">Monday - Friday: 08:00 - 17:00</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex items-start">
+                            <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
+                                <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Email</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    <a href="mailto:info@primetrust.zm" class="hover:text-prime-blue transition-colors duration-200">
+                                        info@primetrust.zm
+                                    </a><br>
+                                    <span class="text-sm text-gray-500">We respond within 24 hours</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- WhatsApp -->
+                        <div class="flex items-start">
+                            <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
+                                <i class="fab fa-whatsapp text-green-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">WhatsApp</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    <a href="https://wa.me/260776082004" target="_blank" class="hover:text-prime-blue transition-colors duration-200">
+                                        +260 776 082 004
+                                    </a><br>
+                                    <span class="text-sm text-gray-500">Quick responses during business hours</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business Hours -->
+                    <div class="mt-12 bg-gray-50 rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Business Hours</h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Monday - Friday</span>
+                                <span class="text-gray-900 font-medium">08:00 - 17:00</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Saturday</span>
+                                <span class="text-gray-900 font-medium">08:00 - 13:00</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Sunday</span>
+                                <span class="text-gray-500">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">Send us a Message</h2>
+                        
+                        <!-- Success Message (Hidden by default) -->
+                        <div id="success-message" class="hidden bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg mb-6">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle mr-2"></i>
+                                <span>Message sent successfully! We'll get back to you soon.</span>
+                            </div>
+                        </div>
+
+                        <!-- Error Message (Hidden by default) -->
+                        <div id="error-message" class="hidden bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-6">
+                            <div class="flex items-center">
+                                <i class="fas fa-exclamation-circle mr-2"></i>
+                                <span>Something went wrong. Please try again or contact us directly.</span>
+                            </div>
+                        </div>
+
+                        <form id="contact-form" action="https://formspree.io/f/mdkqjwvq" method="POST">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="first-name" class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+                                    <input type="text" id="first-name" name="first_name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prime-blue focus:border-transparent transition-colors duration-300" required>
+                                    <div class="text-red-500 text-sm mt-1 hidden" id="first-name-error">Please enter your first name</div>
+                                </div>
+                                
+                                <div>
+                                    <label for="last-name" class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+                                    <input type="text" id="last-name" name="last_name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prime-blue focus:border-transparent transition-colors duration-300" required>
+                                    <div class="text-red-500 text-sm mt-1 hidden" id="last-name-error">Please enter your last name</div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                                    <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prime-blue focus:border-transparent transition-colors duration-300" required>
+                                    <div class="text-red-500 text-sm mt-1 hidden" id="email-error">Please enter a valid email address</div>
+                                </div>
+                                
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prime-blue focus:border-transparent transition-colors duration-300">
+                                </div>
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject *</label>
+                                <select id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prime-blue focus:border-transparent transition-colors duration-300" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="loan-inquiry">Loan Inquiry</option>
+                                    <option value="application-status">Application Status</option>
+                                    <option value="repayment-inquiry">Repayment Inquiry</option>
+                                    <option value="complaint">Complaint</option>
+                                    <option value="general-inquiry">General Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="text-red-500 text-sm mt-1 hidden" id="subject-error">Please select a subject</div>
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                                <textarea id="message" name="message" rows="6" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prime-blue focus:border-transparent transition-colors duration-300" required placeholder="Please provide details about your inquiry..."></textarea>
+                                <div class="text-red-500 text-sm mt-1 hidden" id="message-error">Please enter your message</div>
+                            </div>
+
+                            <button type="submit" id="submit-btn" class="w-full bg-prime-blue text-white px-6 py-3 rounded-lg font-semibold hover:bg-prime-dark transition-colors duration-300 flex items-center justify-center">
+                                <span id="submit-text">Send Message</span>
+                                <i id="submit-spinner" class="fas fa-spinner fa-spin ml-2 hidden"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Quick Actions</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Need immediate assistance? Choose from these quick action options.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Apply for Loan -->
+                <div class="quick-action bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-prime-blue/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-file-alt text-prime-blue text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Apply for a Loan</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Start your loan application process with our simple online form.
+                    </p>
+                    <a href="apply.html" class="inline-flex items-center justify-center px-6 py-3 bg-prime-blue text-white font-semibold rounded-lg hover:bg-prime-dark transition-colors duration-200">
+                        Apply Now
+                    </a>
+                </div>
+
+                <!-- WhatsApp Chat -->
+                <div class="quick-action bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fab fa-whatsapp text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">WhatsApp Chat</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Get instant responses to your questions via WhatsApp.
+                    </p>
+                    <a href="https://wa.me/260776082004" target="_blank" class="inline-flex items-center justify-center px-6 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition-colors duration-200">
+                        Chat Now
+                    </a>
+                </div>
+
+                <!-- Schedule Visit -->
+                <div class="quick-action bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-calendar-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Schedule a Visit</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Book an appointment to visit our office for personalized service.
+                    </p>
+                    <a href="tel:+260211123456" class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200">
+                        Call to Book
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Quick answers to common questions about our services and processes.
+                </p>
+            </div>
+            
+            <div class="space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-gray-50 rounded-xl p-6 opacity-0 translate-y-4 transition-all duration-700">
+                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg font-semibold text-gray-900">What documents do I need to apply?</h3>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform duration-200"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-4 pt-4 border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">
+                            You'll need a valid NRC, proof of income (payslip or bank statements), proof of residence, 
+                            and collateral or guarantor information. For business loans, additional documents like 
+                            business registration and financial statements are required.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-gray-50 rounded-xl p-6 opacity-0 translate-y-4 transition-all duration-700">
+                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg font-semibold text-gray-900">How quickly can I get approved?</h3>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform duration-200"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-4 pt-4 border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">
+                            Most applications are reviewed and approved within 24 hours. Emergency loans can be 
+                            approved on the same day if all required documents are provided and verified.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-gray-50 rounded-xl p-6 opacity-0 translate-y-4 transition-all duration-700">
+                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg font-semibold text-gray-900">What are your interest rates?</h3>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform duration-200"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-4 pt-4 border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">
+                            We charge a flat rate of 5% per month on all loan types. This rate is transparent 
+                            with no hidden fees or charges. Early repayment is allowed without penalties.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-gray-50 rounded-xl p-6 opacity-0 translate-y-4 transition-all duration-700">
+                    <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg font-semibold text-gray-900">Can I apply online?</h3>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform duration-200"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-4 pt-4 border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">
+                            Yes, you can complete your entire application online through our secure application form. 
+                            You can also visit our office or contact us via WhatsApp for assistance with the process.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="bg-prime-blue hover:bg-prime-dark text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 opacity-0 translate-y-4" onclick="scrollToTop()">
+            <i class="fas fa-arrow-up text-lg"></i>
+        </button>
+        
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/260776082004" target="_blank" class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-prime-blue rounded-lg flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">PrimeTrust Lending Services</h3>
+                            <p class="text-sm text-gray-400">Fast. Secure. Reliable.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Your trusted partner for short-term lending solutions in Zambia. We provide transparent, fast, and reliable financial services to individuals and small businesses.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors duration-200">About Us</a></li>
+                        <li><a href="loan-products.html" class="text-gray-400 hover:text-white transition-colors duration-200">Loan Products</a></li>
+                        <li><a href="how-it-works.html" class="text-gray-400 hover:text-white transition-colors duration-200">How It Works</a></li>
+                        <li><a href="apply.html" class="text-gray-400 hover:text-white transition-colors duration-200">Apply Now</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-200">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            Plot 123, Independence Ave, Lusaka
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone mr-3"></i>
+                            +260 211 123 456
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope mr-3"></i>
+                            info@primetrust.zm
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center">
+                <p class="text-gray-400">&copy; 2026 PrimeTrust Lending Services. All rights reserved. | Licensed by Bank of Zambia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // DOM Content Loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Scroll-based section reveals
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animated elements
+            document.querySelectorAll('.contact-info, .contact-form, .quick-action, .faq-item').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Add animate class for scroll animations
+            const style = document.createElement('style');
+            style.textContent = `
+                .contact-info.animate,
+                .contact-form.animate,
+                .quick-action.animate,
+                .faq-item.animate {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            `;
+            document.head.appendChild(style);
+
+            // Staggered animations
+            const quickActions = document.querySelectorAll('.quick-action');
+            quickActions.forEach((action, index) => {
+                action.style.transitionDelay = `${index * 100}ms`;
+            });
+
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach((item, index) => {
+                item.style.transitionDelay = `${index * 100}ms`;
+            });
+        });
+
+        // FAQ Toggle Function
+        function toggleFAQ(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                answer.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Form validation and submission
+        const contactForm = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const submitText = document.getElementById('submit-text');
+        const submitSpinner = document.getElementById('submit-spinner');
+        const successMessage = document.getElementById('success-message');
+        const errorMessage = document.getElementById('error-message');
+
+        // Form validation
+        function validateForm() {
+            let isValid = true;
+            
+            // Reset previous errors
+            document.querySelectorAll('.text-red-500').forEach(error => error.classList.add('hidden'));
+            
+            // Validate required fields
+            const requiredFields = ['first-name', 'last-name', 'email', 'subject', 'message'];
+            requiredFields.forEach(fieldId => {
+                const field = document.getElementById(fieldId);
+                const errorDiv = document.getElementById(`${fieldId}-error`);
+                
+                if (!field.value.trim()) {
+                    errorDiv.classList.remove('hidden');
+                    isValid = false;
+                }
+            });
+            
+            // Validate email format
+            const email = document.getElementById('email').value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email && !emailRegex.test(email)) {
+                document.getElementById('email-error').textContent = 'Please enter a valid email address';
+                document.getElementById('email-error').classList.remove('hidden');
+                isValid = false;
+            }
+            
+            return isValid;
+        }
+
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Hide previous messages
+            successMessage.classList.add('hidden');
+            errorMessage.classList.add('hidden');
+            
+            // Validate form
+            if (!validateForm()) {
+                return;
+            }
+            
+            // Show loading state
+            submitBtn.disabled = true;
+            submitText.textContent = 'Sending...';
+            submitSpinner.classList.remove('hidden');
+            
+            try {
+                // Submit to Formspree
+                const formData = new FormData(contactForm);
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    // Success
+                    successMessage.classList.remove('hidden');
+                    contactForm.reset();
+                    // Scroll to success message
+                    successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
+                    // Error
+                    errorMessage.classList.remove('hidden');
+                }
+            } catch (error) {
+                // Network error
+                errorMessage.classList.remove('hidden');
+            } finally {
+                // Reset button state
+                submitBtn.disabled = false;
+                submitText.textContent = 'Send Message';
+                submitSpinner.classList.add('hidden');
+            }
+        });
+
+        // Back to Top functionality
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'translate-y-4');
+                backToTopBtn.classList.add('opacity-100', 'translate-y-0');
+            } else {
+                backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+                backToTopBtn.classList.add('opacity-0', 'translate-y-4');
+            }
+        });
+
+        window.scrollToTop = scrollToTop;
+    </script>
+</body>
+</html>
