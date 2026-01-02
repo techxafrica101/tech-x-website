@@ -71,252 +71,440 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh] py-16 lg:py-24">
-                <!-- Content Column -->
+    <section class="pt-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(30, 64, 175, 0.3) 1px, transparent 0); background-size: 20px 20px;"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative">
+            <div class="text-center py-20 lg:py-32">
+                <!-- Hero Content -->
                 <div class="hero-content opacity-0 translate-y-8 transition-all duration-700 ease-out">
-                    <h1 class="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
-                        Building Smart Digital Solutions for Africa
+                    <h1 class="text-4xl lg:text-6xl xl:text-7xl font-extrabold text-gray-900 leading-tight mb-8">
+                        Building Digital Systems That 
+                        <span class="text-tech-indigo">Power Real Businesses</span>
                     </h1>
                     
-                    <p class="text-xl text-gray-600 leading-relaxed mb-10 max-w-xl">
-                        We design data platforms, web solutions, and digital tools that solve real-world problems with precision and impact.
+                    <p class="text-xl lg:text-2xl text-gray-600 leading-relaxed mb-12 max-w-4xl mx-auto">
+                        We design and develop lending platforms, business websites, data systems, and custom software for growing enterprises.
                     </p>
                     
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#projects" class="inline-flex items-center justify-center px-8 py-4 bg-tech-indigo text-white font-semibold rounded-full hover:bg-tech-blue transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl">
-                            Explore Our Work
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                        <a href="contact.html" class="inline-flex items-center justify-center px-10 py-5 bg-tech-indigo text-white font-semibold text-lg rounded-xl hover:bg-tech-blue transform hover:-translate-y-1 transition-all duration-200 shadow-xl hover:shadow-2xl">
+                            <i class="fas fa-calendar-check mr-3"></i>
+                            Request a Demo
                         </a>
-                        <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 text-gray-700 font-semibold hover:text-tech-indigo transition-colors duration-200">
-                            Contact Us
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <a href="projects.html" class="inline-flex items-center justify-center px-10 py-5 text-gray-700 font-semibold text-lg border-2 border-gray-300 rounded-xl hover:border-tech-indigo hover:text-tech-indigo transition-all duration-200">
+                            View Our Projects
+                            <svg class="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                             </svg>
                         </a>
                     </div>
                 </div>
                 
-                <!-- Live Typing Card -->
-                <div class="hero-visual opacity-0 translate-y-8 transition-all duration-700 ease-out delay-200">
-                    <div class="relative max-w-sm mx-auto lg:mx-0">
-                        <!-- Live Card -->
-                        <div class="live-card bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-xl border border-gray-200/50 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-                            <!-- Card Header -->
-                            <div class="flex items-center justify-between mb-6">
-                                <h3 class="text-lg font-semibold text-gray-900">What We're Working On</h3>
-                                <div class="flex items-center space-x-2">
-                                    <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                                    <span class="text-xs text-gray-500 font-medium">LIVE</span>
-                                </div>
-                            </div>
-                            
-                            <!-- Typing Area -->
-                            <div class="bg-gray-50/70 rounded-lg p-4 min-h-[60px] flex items-center">
-                                <div class="text-gray-700 font-medium text-sm">
-                                    <span id="typing-text"></span><span class="typing-cursor text-tech-indigo">|</span>
-                                </div>
-                            </div>
-                            
-                            <!-- Card Footer -->
-                            <div class="mt-4 pt-4 border-t border-gray-100">
-                                <div class="flex items-center justify-between text-xs text-gray-500">
-                                    <span>Active Projects</span>
-                                    <span class="flex items-center">
-                                        <div class="w-1 h-1 bg-tech-indigo rounded-full mr-1"></div>
-                                        Real-time updates
-                                    </span>
-                                </div>
-                            </div>
+                <!-- Trust Indicators -->
+                <div class="hero-indicators opacity-0 translate-y-8 transition-all duration-700 ease-out delay-300 mt-16">
+                    <div class="flex flex-wrap justify-center items-center gap-8 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fas fa-shield-alt text-green-500 mr-2"></i>
+                            <span class="text-sm font-medium">Secure & Compliant</span>
                         </div>
-                        
-                        <!-- Background decoration -->
-                        <div class="absolute -inset-4 bg-gradient-to-r from-tech-indigo/5 to-tech-blue/5 rounded-2xl -z-10 blur-xl"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>""
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-tech-indigo mb-4">Our Services</h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Professional digital solutions for schools, businesses, and institutions in Zambia.
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1: Website Development -->
-                <div class="service-card bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-0 translate-y-4">
-                    <div class="w-16 h-16 bg-tech-indigo/10 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-globe text-tech-indigo text-2xl"></i>
-                    </div>
-                    
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Website Development</h3>
-                    <p class="text-gray-600 mb-6">For schools, clinics, NGOs, SMEs</p>
-                    
-                    <div class="mb-6">
-                        <h4 class="font-semibold text-gray-900 mb-3">Features:</h4>
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-tech-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                4–6 professional pages
-                            </li>
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-tech-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                Mobile-friendly design
-                            </li>
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-tech-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                Contact or booking form
-                            </li>
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-tech-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                Basic SEO setup
-                            </li>
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-tech-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                Social media & WhatsApp integration
-                            </li>
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-tech-indigo rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                Hosting & domain guidance
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="border-t border-gray-100 pt-6">
-                        <div class="flex justify-between items-center mb-4">
-                            <div>
-                                <div class="text-2xl font-bold text-tech-indigo">ZMW 2,500 – 4,000</div>
-                                <div class="text-sm text-gray-500">Price range</div>
-                            </div>
-                            <div class="text-right">
-                                <div class="text-lg font-semibold text-gray-900">5–10 days</div>
-                                <div class="text-sm text-gray-500">Delivery</div>
-                            </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-blue-500 mr-2"></i>
+                            <span class="text-sm font-medium">Fast Delivery</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-handshake text-purple-500 mr-2"></i>
+                            <span class="text-sm font-medium">Local Expertise</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-headset text-orange-500 mr-2"></i>
+                            <span class="text-sm font-medium">Ongoing Support</span>
                         </div>
                     </div>
-                </div>
-
-                <!-- Service 2: Digital Documents -->
-                <div class="service-card bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-0 translate-y-4">
-                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-file-alt text-green-600 text-2xl"></i>
-                    </div>
-                    
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Digital Documents & Profiles</h3>
-                    <p class="text-gray-600 mb-6">For companies, NGOs, cooperatives, lending institutions</p>
-                    
-                    <div class="mb-6">
-                        <h4 class="font-semibold text-gray-900 mb-3">Includes:</h4>
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                Company profiles
-                            </li>
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                Business & NGO proposals
-                            </li>
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                Contracts & agreements
-                            </li>
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                Branded reports & PDFs
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="border-t border-gray-100 pt-6">
-                        <div class="flex justify-between items-center mb-4">
-                            <div>
-                                <div class="text-2xl font-bold text-green-600">ZMW 800 – 2,000</div>
-                                <div class="text-sm text-gray-500">Price range</div>
-                            </div>
-                            <div class="text-right">
-                                <div class="text-lg font-semibold text-gray-900">2–5 days</div>
-                                <div class="text-sm text-gray-500">Delivery</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 3: Digital Systems -->
-                <div class="service-card bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-0 translate-y-4 md:col-span-2 lg:col-span-1">
-                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-cogs text-blue-600 text-2xl"></i>
-                    </div>
-                    
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Simple Digital Systems</h3>
-                    <p class="text-gray-600 mb-6">For schools, lodges, and growing businesses</p>
-                    
-                    <div class="mb-6">
-                        <h4 class="font-semibold text-gray-900 mb-3">Includes:</h4>
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                Student portals
-                            </li>
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                Booking systems
-                            </li>
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                Basic databases & dashboards
-                            </li>
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                User login & admin panel
-                            </li>
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                Data entry & reports
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="border-t border-gray-100 pt-6">
-                        <div class="flex justify-between items-center mb-4">
-                            <div>
-                                <div class="text-2xl font-bold text-blue-600">ZMW 3,500 – 6,000</div>
-                                <div class="text-sm text-gray-500">Price range</div>
-                            </div>
-                            <div class="text-right">
-                                <div class="text-lg font-semibold text-gray-900">7–14 days</div>
-                                <div class="text-sm text-gray-500">Delivery</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Call to Action -->
-            <div class="text-center mt-16">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">
-                    Ready to take your institution or business digital?
-                </h3>
-                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-                    Get started with professional digital solutions tailored for Zambian schools, businesses, and institutions.
-                </p>
-                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-tech-indigo text-white font-semibold rounded-lg hover:bg-tech-blue transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl">
-                        Request a Quote
-                    </a>
-                    <a href="https://wa.me/260776082004" target="_blank" class="inline-flex items-center justify-center px-8 py-4 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl">
-                        <i class="fab fa-whatsapp text-xl mr-3"></i>
-                        Contact Tech-X
-                    </a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- What We Build Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">What We Build</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Professional digital solutions designed for modern businesses and institutions.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Lending Systems -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-0 translate-y-4">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-university text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Lending & Loan Management Systems</h3>
+                    <p class="text-gray-600">Complete platforms for loan processing, client management, and financial tracking.</p>
+                </div>
+
+                <!-- Business Websites -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-0 translate-y-4">
+                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-globe text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Business & Institutional Websites</h3>
+                    <p class="text-gray-600">Professional websites that convert visitors into customers and build trust.</p>
+                </div>
+
+                <!-- Data Dashboards -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-0 translate-y-4">
+                    <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Data Dashboards & Analytics</h3>
+                    <p class="text-gray-600">Real-time insights and reporting systems for data-driven decision making.</p>
+                </div>
+
+                <!-- Custom Software -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-0 translate-y-4">
+                    <div class="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-orange-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Custom Software Solutions</h3>
+                    <p class="text-gray-600">Tailored applications built specifically for your business processes and needs.</p>
+                </div>
+
+                <!-- Digital Forms -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-0 translate-y-4">
+                    <div class="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-file-alt text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Digital Forms & Process Automation</h3>
+                    <p class="text-gray-600">Streamlined workflows and automated processes to improve efficiency.</p>
+                </div>
+
+                <!-- Support & Maintenance -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 opacity-0 translate-y-4">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Hosting, Maintenance & Support</h3>
+                    <p class="text-gray-600">Reliable hosting and ongoing support to keep your systems running smoothly.</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Featured Demo Project Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Featured Demo Project</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    See our capabilities in action with this fully functional lending platform demo.
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+                <div class="grid lg:grid-cols-2 gap-0">
+                    <!-- Demo Preview -->
+                    <div class="bg-gradient-to-br from-blue-600 to-blue-800 p-12 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <div class="w-24 h-24 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-8">
+                                <i class="fas fa-university text-4xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4">Digital Lending Platform</h3>
+                            <p class="text-blue-100 mb-8 leading-relaxed">
+                                Complete lending system with client onboarding, loan tracking, interest calculation, 
+                                repayment schedules, and admin management.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 text-sm">
+                                <div class="bg-white/10 rounded-lg p-3">
+                                    <div class="font-semibold">Loan Processing</div>
+                                    <div class="text-blue-200">Automated</div>
+                                </div>
+                                <div class="bg-white/10 rounded-lg p-3">
+                                    <div class="font-semibold">Client Portal</div>
+                                    <div class="text-blue-200">Self-Service</div>
+                                </div>
+                                <div class="bg-white/10 rounded-lg p-3">
+                                    <div class="font-semibold">Reporting</div>
+                                    <div class="text-blue-200">Real-time</div>
+                                </div>
+                                <div class="bg-white/10 rounded-lg p-3">
+                                    <div class="font-semibold">Compliance</div>
+                                    <div class="text-blue-200">Built-in</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Demo Details -->
+                    <div class="p-12">
+                        <div class="mb-8">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Live Demo</span>
+                        </div>
+                        
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">PrimeTrust Lending Services</h3>
+                        
+                        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                            A fully functional lending system with client onboarding, loan tracking, interest calculation, 
+                            repayment schedules, and admin management. Built with security, compliance, and user experience in mind.
+                        </p>
+                        
+                        <div class="space-y-4 mb-10">
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span class="text-gray-700">Multi-step loan application process</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span class="text-gray-700">Automated interest calculations</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span class="text-gray-700">Client dashboard and tracking</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span class="text-gray-700">Admin management panel</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span class="text-gray-700">Regulatory compliance features</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="demo-primetrust-lending/index.html" target="_blank" class="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200">
+                                <i class="fas fa-external-link-alt mr-3"></i>
+                                View Demo
+                            </a>
+                            <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 text-gray-700 font-semibold border-2 border-gray-300 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors duration-200">
+                                Request Similar System
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">How We Work</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Our proven 4-step process ensures successful project delivery every time.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="process-step text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="relative mb-8">
+                        <div class="w-20 h-20 bg-tech-indigo rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl font-bold text-white">1</span>
+                        </div>
+                        <div class="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-gray-200 -translate-y-0.5"></div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Discovery & Needs Assessment</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We analyze your business requirements and identify the best technical solutions for your goals.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-step text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="relative mb-8">
+                        <div class="w-20 h-20 bg-tech-indigo rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl font-bold text-white">2</span>
+                        </div>
+                        <div class="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-gray-200 -translate-y-0.5"></div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">System Design & Proposal</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Detailed system architecture, user interface designs, and comprehensive project proposal.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-step text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="relative mb-8">
+                        <div class="w-20 h-20 bg-tech-indigo rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl font-bold text-white">3</span>
+                        </div>
+                        <div class="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-gray-200 -translate-y-0.5"></div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Development & Testing</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Agile development with regular updates, thorough testing, and quality assurance.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="process-step text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="relative mb-8">
+                        <div class="w-20 h-20 bg-tech-indigo rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl font-bold text-white">4</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Launch, Training & Support</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        System deployment, user training, and ongoing technical support and maintenance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Tech-X Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Why Choose Tech-X</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    We deliver custom solutions that drive real business results.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Custom Solutions -->
+                <div class="why-card bg-white rounded-xl p-8 shadow-lg opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Custom-Built Solutions</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        No templates or one-size-fits-all approaches. Every system is built specifically for your business needs.
+                    </p>
+                </div>
+
+                <!-- Local Understanding -->
+                <div class="why-card bg-white rounded-xl p-8 shadow-lg opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-map-marker-alt text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Local Business Understanding</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Deep knowledge of Zambian business environment, regulations, and market dynamics.
+                    </p>
+                </div>
+
+                <!-- Security -->
+                <div class="why-card bg-white rounded-xl p-8 shadow-lg opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Secure & Scalable Systems</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Enterprise-grade security and architecture that grows with your business.
+                    </p>
+                </div>
+
+                <!-- Pricing -->
+                <div class="why-card bg-white rounded-xl p-8 shadow-lg opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-dollar-sign text-orange-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Affordable & Flexible Pricing</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Transparent pricing with flexible payment options that work for growing businesses.
+                    </p>
+                </div>
+
+                <!-- Communication -->
+                <div class="why-card bg-white rounded-xl p-8 shadow-lg opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-comments text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Clear Timelines & Communication</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Regular updates, clear milestones, and transparent communication throughout the project.
+                    </p>
+                </div>
+
+                <!-- Support -->
+                <div class="why-card bg-white rounded-xl p-8 shadow-lg opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Ongoing Support</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Comprehensive training, documentation, and ongoing technical support after launch.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Serve Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Who We Serve</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    We partner with organizations across various sectors to drive digital transformation.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+                <!-- Lending Institutions -->
+                <div class="client-type text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-university text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-sm font-semibold text-gray-900 mb-2">Lending Institutions</h3>
+                    <p class="text-xs text-gray-600">& SACCOs</p>
+                </div>
+
+                <!-- SMEs -->
+                <div class="client-type text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-briefcase text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-sm font-semibold text-gray-900 mb-2">SMEs</h3>
+                    <p class="text-xs text-gray-600">& Startups</p>
+                </div>
+
+                <!-- NGOs -->
+                <div class="client-type text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hands-helping text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-sm font-semibold text-gray-900 mb-2">NGOs</h3>
+                    <p class="text-xs text-gray-600">& Cooperatives</p>
+                </div>
+
+                <!-- Schools -->
+                <div class="client-type text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-graduation-cap text-orange-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-sm font-semibold text-gray-900 mb-2">Schools</h3>
+                    <p class="text-xs text-gray-600">& Training Institutes</p>
+                </div>
+
+                <!-- Retail -->
+                <div class="client-type text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-store text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-sm font-semibold text-gray-900 mb-2">Retail</h3>
+                    <p class="text-xs text-gray-600">& E-commerce</p>
+                </div>
+
+                <!-- Agribusiness -->
+                <div class="client-type text-center opacity-0 translate-y-4 transition-all duration-700">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-seedling text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-sm font-semibold text-gray-900 mb-2">Agribusiness</h3>
+                    <p class="text-xs text-gray-600">& Farming</p>
+                </div>
+            </div>
+        </div>
 
     <!-- Why Tech-X Section -->
     <section class="py-24 bg-white">
@@ -434,19 +622,27 @@
                     </div>
                 </div>
 
-                <!-- Future Project 1 -->
+                <!-- PrimeTrust Lending Demo Project -->
                 <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-2xl font-bold text-tech-indigo">Upcoming Agri-Tech Platform</h3>
-                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">In Development</span>
+                        <h3 class="text-2xl font-bold text-tech-indigo">PrimeTrust Lending Services</h3>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Demo</span>
                     </div>
                     <p class="text-gray-600 mb-4">
-                        Comprehensive digital platform connecting farmers with markets, providing weather data, crop management tools, and financial services.
+                        A professional demo lending institution website showcasing Tech-X's capability to design secure, compliant, and conversion-focused financial platforms.
                     </p>
-                    <div class="flex items-center text-tech-accent">
-                        <i class="fas fa-clock mr-2"></i>
-                        <span class="text-sm">Market connectivity • Weather data • Crop management</span>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center text-tech-accent">
+                            <i class="fas fa-shield-alt mr-2"></i>
+                            <span class="text-sm">Lending Platform • Trust-Focused • Compliance Ready</span>
+                        </div>
                     </div>
+                    <a href="demo-primetrust-lending/index.html" target="_blank" class="inline-flex items-center text-tech-indigo font-semibold hover:text-tech-blue transition-colors duration-200">
+                        View Demo Website
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                    </a>
                 </div>
 
                 <!-- Future Project 2 -->
